@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
+		53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
+		53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
+		53E4160C13DF8FA000B93237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E4160A13DF8FA000B93237 /* InfoPlist.strings */; };
+		53E4160E13DF8FA000B93237 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4160D13DF8FA000B93237 /* main.m */; };
+		53E4161213DF8FA000B93237 /* KotobaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */; };
+		53E4161513DF8FA000B93237 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E4161313DF8FA000B93237 /* MainStoryboard_iPhone.storyboard */; };
+		53E4161813DF8FA000B93237 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E4161613DF8FA000B93237 /* MainStoryboard_iPad.storyboard */; };
+		53E4161B13DF8FA000B93237 /* KotobaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4161A13DF8FA000B93237 /* KotobaViewController.m */; };
+		53E4162313DF8FA000B93237 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4162213DF8FA000B93237 /* SenTestingKit.framework */; };
+		53E4162413DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
+		53E4162513DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
+		53E4162613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
+		53E4162E13DF8FA000B93237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E4162C13DF8FA000B93237 /* InfoPlist.strings */; };
+		53E4163013DF8FA000B93237 /* KotobaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 53E4162F13DF8FA000B93237 /* KotobaTests.h */; };
+		53E4163213DF8FA000B93237 /* KotobaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4163113DF8FA000B93237 /* KotobaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53E4162713DF8FA000B93237 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53E415F413DF8F9F00B93237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53E415FC13DF8F9F00B93237;
+			remoteInfo = Kotoba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53E4160513DF8FA000B93237 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		53E4160913DF8FA000B93237 /* Kotoba-Info.plist */ = {isa = PBXFileReference; path = "Kotoba-Info.plist"; sourceTree = "<group>"; };
+		53E4160B13DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53E4160D13DF8FA000B93237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53E4160F13DF8FA000B93237 /* Kotoba-Prefix.pch */ = {isa = PBXFileReference; path = "Kotoba-Prefix.pch"; sourceTree = "<group>"; };
+		53E4161013DF8FA000B93237 /* KotobaAppDelegate.h */ = {isa = PBXFileReference; path = KotobaAppDelegate.h; sourceTree = "<group>"; };
+		53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaAppDelegate.m; sourceTree = "<group>"; };
+		53E4161413DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		53E4161713DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		53E4161913DF8FA000B93237 /* KotobaViewController.h */ = {isa = PBXFileReference; path = KotobaViewController.h; sourceTree = "<group>"; };
+		53E4161A13DF8FA000B93237 /* KotobaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaViewController.m; sourceTree = "<group>"; };
+		53E4162113DF8FA000B93237 /* KotobaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53E4162213DF8FA000B93237 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
+		53E4162D13DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53E4162F13DF8FA000B93237 /* KotobaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaTests.h; sourceTree = "<group>"; };
+		53E4163113DF8FA000B93237 /* KotobaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53E415FA13DF8F9F00B93237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */,
+				53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */,
+				53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E4161D13DF8FA000B93237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4162313DF8FA000B93237 /* SenTestingKit.framework in Frameworks */,
+				53E4162413DF8FA000B93237 /* UIKit.framework in Frameworks */,
+				53E4162513DF8FA000B93237 /* Foundation.framework in Frameworks */,
+				53E4162613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53E415F213DF8F9F00B93237 = {
+			isa = PBXGroup;
+			children = (
+				53E4160713DF8FA000B93237 /* Kotoba */,
+				53E4162913DF8FA000B93237 /* KotobaTests */,
+				53E4160013DF8FA000B93237 /* Frameworks */,
+				53E415FE13DF8FA000B93237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53E415FE13DF8FA000B93237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53E415FD13DF8FA000B93237 /* Kotoba.app */,
+				53E4162113DF8FA000B93237 /* KotobaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53E4160013DF8FA000B93237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E4160113DF8FA000B93237 /* UIKit.framework */,
+				53E4160313DF8FA000B93237 /* Foundation.framework */,
+				53E4160513DF8FA000B93237 /* CoreGraphics.framework */,
+				53E4162213DF8FA000B93237 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53E4160713DF8FA000B93237 /* Kotoba */ = {
+			isa = PBXGroup;
+			children = (
+				53E4161013DF8FA000B93237 /* KotobaAppDelegate.h */,
+				53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */,
+				53E4161313DF8FA000B93237 /* MainStoryboard_iPhone.storyboard */,
+				53E4161613DF8FA000B93237 /* MainStoryboard_iPad.storyboard */,
+				53E4161913DF8FA000B93237 /* KotobaViewController.h */,
+				53E4161A13DF8FA000B93237 /* KotobaViewController.m */,
+				53E4160813DF8FA000B93237 /* Supporting Files */,
+			);
+			path = Kotoba;
+			sourceTree = "<group>";
+		};
+		53E4160813DF8FA000B93237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53E4160913DF8FA000B93237 /* Kotoba-Info.plist */,
+				53E4160A13DF8FA000B93237 /* InfoPlist.strings */,
+				53E4160D13DF8FA000B93237 /* main.m */,
+				53E4160F13DF8FA000B93237 /* Kotoba-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53E4162913DF8FA000B93237 /* KotobaTests */ = {
+			isa = PBXGroup;
+			children = (
+				53E4162F13DF8FA000B93237 /* KotobaTests.h */,
+				53E4163113DF8FA000B93237 /* KotobaTests.m */,
+				53E4162A13DF8FA000B93237 /* Supporting Files */,
+			);
+			path = KotobaTests;
+			sourceTree = "<group>";
+		};
+		53E4162A13DF8FA000B93237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */,
+				53E4162C13DF8FA000B93237 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53E415FC13DF8F9F00B93237 /* Kotoba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53E4163513DF8FA000B93237 /* Build configuration list for PBXNativeTarget "Kotoba" */;
+			buildPhases = (
+				53E415F913DF8F9F00B93237 /* Sources */,
+				53E415FA13DF8F9F00B93237 /* Frameworks */,
+				53E415FB13DF8F9F00B93237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kotoba;
+			productName = Kotoba;
+			productReference = 53E415FD13DF8FA000B93237 /* Kotoba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53E4162013DF8FA000B93237 /* KotobaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53E4163813DF8FA000B93237 /* Build configuration list for PBXNativeTarget "KotobaTests" */;
+			buildPhases = (
+				53E4161C13DF8FA000B93237 /* Sources */,
+				53E4161D13DF8FA000B93237 /* Frameworks */,
+				53E4161E13DF8FA000B93237 /* Resources */,
+				53E4161F13DF8FA000B93237 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53E4162813DF8FA000B93237 /* PBXTargetDependency */,
+			);
+			name = KotobaTests;
+			productName = KotobaTests;
+			productReference = 53E4162113DF8FA000B93237 /* KotobaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53E415F413DF8F9F00B93237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = P2D;
+			};
+			buildConfigurationList = 53E415F713DF8F9F00B93237 /* Build configuration list for PBXProject "Kotoba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53E415F213DF8F9F00B93237;
+			productRefGroup = 53E415FE13DF8FA000B93237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53E415FC13DF8F9F00B93237 /* Kotoba */,
+				53E4162013DF8FA000B93237 /* KotobaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53E415FB13DF8F9F00B93237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4160C13DF8FA000B93237 /* InfoPlist.strings in Resources */,
+				53E4161513DF8FA000B93237 /* MainStoryboard_iPhone.storyboard in Resources */,
+				53E4161813DF8FA000B93237 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E4161E13DF8FA000B93237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4162E13DF8FA000B93237 /* InfoPlist.strings in Resources */,
+				53E4163013DF8FA000B93237 /* KotobaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53E4161F13DF8FA000B93237 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53E415F913DF8F9F00B93237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4160E13DF8FA000B93237 /* main.m in Sources */,
+				53E4161213DF8FA000B93237 /* KotobaAppDelegate.m in Sources */,
+				53E4161B13DF8FA000B93237 /* KotobaViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53E4161C13DF8FA000B93237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53E4163213DF8FA000B93237 /* KotobaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53E4162813DF8FA000B93237 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53E415FC13DF8F9F00B93237 /* Kotoba */;
+			targetProxy = 53E4162713DF8FA000B93237 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53E4160A13DF8FA000B93237 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53E4160B13DF8FA000B93237 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53E4161313DF8FA000B93237 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53E4161413DF8FA000B93237 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		53E4161613DF8FA000B93237 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53E4161713DF8FA000B93237 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		53E4162C13DF8FA000B93237 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53E4162D13DF8FA000B93237 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53E4163313DF8FA000B93237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53E4163413DF8FA000B93237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53E4163613DF8FA000B93237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53E4163713DF8FA000B93237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		53E4163913DF8FA000B93237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		53E4163A13DF8FA000B93237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53E415F713DF8F9F00B93237 /* Build configuration list for PBXProject "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E4163313DF8FA000B93237 /* Debug */,
+				53E4163413DF8FA000B93237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53E4163513DF8FA000B93237 /* Build configuration list for PBXNativeTarget "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E4163613DF8FA000B93237 /* Debug */,
+				53E4163713DF8FA000B93237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		53E4163813DF8FA000B93237 /* Build configuration list for PBXNativeTarget "KotobaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53E4163913DF8FA000B93237 /* Debug */,
+				53E4163A13DF8FA000B93237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53E415F413DF8F9F00B93237 /* Project object */;
+}

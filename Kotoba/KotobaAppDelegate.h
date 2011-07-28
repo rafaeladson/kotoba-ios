@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KotobaAppDelegate : UIResponder <UIApplicationDelegate>
+@interface KotobaAppDelegate : UIResponder <UIApplicationDelegate> {
+
+
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
+
+
 
 @end

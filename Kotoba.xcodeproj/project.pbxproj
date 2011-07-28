@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53307F8713E0F87A0056E423 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 53307F8613E0F87A0056E423 /* Word.m */; };
 		53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
 		53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
 		53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
@@ -36,23 +37,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53307F8513E0F87A0056E423 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		53307F8613E0F87A0056E423 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		53E4160513DF8FA000B93237 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		53E4160913DF8FA000B93237 /* Kotoba-Info.plist */ = {isa = PBXFileReference; path = "Kotoba-Info.plist"; sourceTree = "<group>"; };
+		53E4160913DF8FA000B93237 /* Kotoba-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kotoba-Info.plist"; sourceTree = "<group>"; };
 		53E4160B13DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53E4160D13DF8FA000B93237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		53E4160F13DF8FA000B93237 /* Kotoba-Prefix.pch */ = {isa = PBXFileReference; path = "Kotoba-Prefix.pch"; sourceTree = "<group>"; };
-		53E4161013DF8FA000B93237 /* KotobaAppDelegate.h */ = {isa = PBXFileReference; path = KotobaAppDelegate.h; sourceTree = "<group>"; };
+		53E4160F13DF8FA000B93237 /* Kotoba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotoba-Prefix.pch"; sourceTree = "<group>"; };
+		53E4161013DF8FA000B93237 /* KotobaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaAppDelegate.h; sourceTree = "<group>"; };
 		53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaAppDelegate.m; sourceTree = "<group>"; };
 		53E4161413DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53E4161713DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		53E4161913DF8FA000B93237 /* KotobaViewController.h */ = {isa = PBXFileReference; path = KotobaViewController.h; sourceTree = "<group>"; };
+		53E4161913DF8FA000B93237 /* KotobaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaViewController.h; sourceTree = "<group>"; };
 		53E4161A13DF8FA000B93237 /* KotobaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaViewController.m; sourceTree = "<group>"; };
 		53E4162113DF8FA000B93237 /* KotobaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4162213DF8FA000B93237 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
+		53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
 		53E4162D13DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53E4162F13DF8FA000B93237 /* KotobaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaTests.h; sourceTree = "<group>"; };
 		53E4163113DF8FA000B93237 /* KotobaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaTests.m; sourceTree = "<group>"; };
@@ -123,6 +126,8 @@
 				53E4161913DF8FA000B93237 /* KotobaViewController.h */,
 				53E4161A13DF8FA000B93237 /* KotobaViewController.m */,
 				53E4160813DF8FA000B93237 /* Supporting Files */,
+				53307F8513E0F87A0056E423 /* Word.h */,
+				53307F8613E0F87A0056E423 /* Word.m */,
 			);
 			path = Kotoba;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				53E4160E13DF8FA000B93237 /* main.m in Sources */,
 				53E4161213DF8FA000B93237 /* KotobaAppDelegate.m in Sources */,
 				53E4161B13DF8FA000B93237 /* KotobaViewController.m in Sources */,
+				53307F8713E0F87A0056E423 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +453,7 @@
 				53E4163713DF8FA000B93237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		53E4163813DF8FA000B93237 /* Build configuration list for PBXNativeTarget "KotobaTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +462,7 @@
 				53E4163A13DF8FA000B93237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

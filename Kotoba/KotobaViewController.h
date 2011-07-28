@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KotobaViewController : UIViewController
+@interface KotobaViewController : UIViewController {
+    UILabel *wordLabel;
+    NSArray *wordsInDatabase;
+    @private int selectedWordIndex;
+    IBOutlet UILabel *answerLabel;
+}
+
+@property (nonatomic, strong) IBOutlet UILabel *wordLabel;
+@property (nonatomic, retain) NSArray *wordsInDatabase;
+- (IBAction)nextWord:(id)sender;
+- (IBAction)showTranslationOrOriginal:(id)sender;
+@property (readwrite, assign) int selectedWordIndex;
+
 
 @end

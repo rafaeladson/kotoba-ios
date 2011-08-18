@@ -28,46 +28,46 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     wordsInDatabase = [[NSArray alloc] initWithObjects:
-                       [[Word alloc] initWithOriginal:@"おじいさん" andTranslation:@"(seu) Avô"],
-                       [[Word alloc] initWithOriginal:@"おばあさん" andTranslation:@"(sua) Avó"],
-                       [[Word alloc] initWithOriginal:@"おとうさん" andTranslation:@"(seu) Pai"],
-                       [[Word alloc] initWithOriginal:@"おかあさん" andTranslation:@"(sua) Mãe"],
-                       [[Word alloc] initWithOriginal:@"おにいさん" andTranslation:@"(seu) Irmão mais velho"],
-                       [[Word alloc] initWithOriginal:@"おねえさん" andTranslation:@"(sua) Irmã mais velha"],
-                       [[Word alloc] initWithOriginal:@"おとうとさん" andTranslation:@"(seu) Irmão mais novo"],
-                       [[Word alloc] initWithOriginal:@"おもうとさん" andTranslation:@"(sua) Irmã mais nova"],
-                       [[Word alloc] initWithOriginal:@"おじさん" andTranslation:@"(seu) Tio"],
-                       [[Word alloc] initWithOriginal:@"おばさん" andTranslation:@"(sua) Tia"],
-                       [[Word alloc] initWithOriginal:@"いとこさん" andTranslation:@"(seu) Primo"],
-                       [[Word alloc] initWithOriginal:@"そふ" andTranslation:@"(meu) Avô"],
-                       [[Word alloc] initWithOriginal:@"そぼ" andTranslation:@"(minha) Avó"],
-                       [[Word alloc] initWithOriginal:@"ちち" andTranslation:@"(meu) Pai"],
-                       [[Word alloc] initWithOriginal:@"はは" andTranslation:@"(minha) Mãe"],
-                       [[Word alloc] initWithOriginal:@"あに" andTranslation:@"(meu) Irmão mais velho"],
-                       [[Word alloc] initWithOriginal:@"あね" andTranslation:@"(minha) Irmã mais velha"],
-                       [[Word alloc] initWithOriginal:@"おとうと" andTranslation:@"(meu) Irmão mais novo"],
-                       [[Word alloc] initWithOriginal:@"いもうと" andTranslation:@"(minha) Irmã mais nova"],
-                       [[Word alloc] initWithOriginal:@"おじ" andTranslation:@"(meu) Tio"],
-                       [[Word alloc] initWithOriginal:@"おば" andTranslation:@"(minha) Tia"],
-                       [[Word alloc] initWithOriginal:@"りょうしん" andTranslation:@"(meus) pais"],
-                       [[Word alloc] initWithOriginal:@"しゅじん。おっと" andTranslation:@"(meu) marido, esposo"],
-                       [[Word alloc] initWithOriginal:@"かない。つま" andTranslation:@"(minha) esposa"],
-                       [[Word alloc] initWithOriginal:@"こども" andTranslation:@"(meu) filho, (minha) filha, criança"],
-                       [[Word alloc] initWithOriginal:@"むすこ" andTranslation:@"(meu) filho"],
-                       [[Word alloc] initWithOriginal:@"むすめ" andTranslation:@"(minha) filha"],
-                       [[Word alloc] initWithOriginal:@"おい" andTranslation:@"(meu) sobrinho"],
-                       [[Word alloc] initWithOriginal:@"めい" andTranslation:@"(minha) sobrinha"],
-                       [[Word alloc] initWithOriginal:@"まご" andTranslation:@"(meu) neto, (minha) neta"],
-                       [[Word alloc] initWithOriginal:@"ひとりっこ" andTranslation:@"filho(a) único(a)"],
-                       [[Word alloc] initWithOriginal:@"ごりょうしん" andTranslation:@"(seus) pais"],
-                       [[Word alloc] initWithOriginal:@"ごしゅじん" andTranslation:@"(seu) marido, esposo"],
-                       [[Word alloc] initWithOriginal:@"おくさん" andTranslation:@"(sua) esposa"],
-                       [[Word alloc] initWithOriginal:@"おこさん" andTranslation:@"(seu) filho, (sua) filha"],
-                       [[Word alloc] initWithOriginal:@"むすこさん" andTranslation:@"(seu) filho"],
-                       [[Word alloc] initWithOriginal:@"むすめさん" andTranslation:@"(sua) filha"],
-                       [[Word alloc] initWithOriginal:@"おいごさん" andTranslation:@"(seu) sobrinho"],
-                       [[Word alloc] initWithOriginal:@"めいごさん" andTranslation:@"(sua) sobrinha"],
-                       [[Word alloc] initWithOriginal:@"おまごさん" andTranslation:@"(seu) neto, (sua) neta"], nil ];
+                       [[Word alloc] initWithValue:@"おじいさん" andAnswer:@"(seu) Avô"],
+                       [[Word alloc] initWithValue:@"おばあさん" andAnswer:@"(sua) Avó"],
+                       [[Word alloc] initWithValue:@"おとうさん" andAnswer:@"(seu) Pai"],
+                       [[Word alloc] initWithValue:@"おかあさん" andAnswer:@"(sua) Mãe"],
+                       [[Word alloc] initWithValue:@"おにいさん" andAnswer:@"(seu) Irmão mais velho"],
+                       [[Word alloc] initWithValue:@"おねえさん" andAnswer:@"(sua) Irmã mais velha"],
+                       [[Word alloc] initWithValue:@"おとうとさん" andAnswer:@"(seu) Irmão mais novo"],
+                       [[Word alloc] initWithValue:@"おもうとさん" andAnswer:@"(sua) Irmã mais nova"],
+                       [[Word alloc] initWithValue:@"おじさん" andAnswer:@"(seu) Tio"],
+                       [[Word alloc] initWithValue:@"おばさん" andAnswer:@"(sua) Tia"],
+                       [[Word alloc] initWithValue:@"いとこさん" andAnswer:@"(seu) Primo"],
+                       [[Word alloc] initWithValue:@"そふ" andAnswer:@"(meu) Avô"],
+                       [[Word alloc] initWithValue:@"そぼ" andAnswer:@"(minha) Avó"],
+                       [[Word alloc] initWithValue:@"ちち" andAnswer:@"(meu) Pai"],
+                       [[Word alloc] initWithValue:@"はは" andAnswer:@"(minha) Mãe"],
+                       [[Word alloc] initWithValue:@"あに" andAnswer:@"(meu) Irmão mais velho"],
+                       [[Word alloc] initWithValue:@"あね" andAnswer:@"(minha) Irmã mais velha"],
+                       [[Word alloc] initWithValue:@"おとうと" andAnswer:@"(meu) Irmão mais novo"],
+                       [[Word alloc] initWithValue:@"いもうと" andAnswer:@"(minha) Irmã mais nova"],
+                       [[Word alloc] initWithValue:@"おじ" andAnswer:@"(meu) Tio"],
+                       [[Word alloc] initWithValue:@"おば" andAnswer:@"(minha) Tia"],
+                       [[Word alloc] initWithValue:@"りょうしん" andAnswer:@"(meus) pais"],
+                       [[Word alloc] initWithValue:@"しゅじん。おっと" andAnswer:@"(meu) marido, esposo"],
+                       [[Word alloc] initWithValue:@"かない。つま" andAnswer:@"(minha) esposa"],
+                       [[Word alloc] initWithValue:@"こども" andAnswer:@"(meu) filho, (minha) filha, criança"],
+                       [[Word alloc] initWithValue:@"むすこ" andAnswer:@"(meu) filho"],
+                       [[Word alloc] initWithValue:@"むすめ" andAnswer:@"(minha) filha"],
+                       [[Word alloc] initWithValue:@"おい" andAnswer:@"(meu) sobrinho"],
+                       [[Word alloc] initWithValue:@"めい" andAnswer:@"(minha) sobrinha"],
+                       [[Word alloc] initWithValue:@"まご" andAnswer:@"(meu) neto, (minha) neta"],
+                       [[Word alloc] initWithValue:@"ひとりっこ" andAnswer:@"filho(a) único(a)"],
+                       [[Word alloc] initWithValue:@"ごりょうしん" andAnswer:@"(seus) pais"],
+                       [[Word alloc] initWithValue:@"ごしゅじん" andAnswer:@"(seu) marido, esposo"],
+                       [[Word alloc] initWithValue:@"おくさん" andAnswer:@"(sua) esposa"],
+                       [[Word alloc] initWithValue:@"おこさん" andAnswer:@"(seu) filho, (sua) filha"],
+                       [[Word alloc] initWithValue:@"むすこさん" andAnswer:@"(seu) filho"],
+                       [[Word alloc] initWithValue:@"むすめさん" andAnswer:@"(sua) filha"],
+                       [[Word alloc] initWithValue:@"おいごさん" andAnswer:@"(seu) sobrinho"],
+                       [[Word alloc] initWithValue:@"めいごさん" andAnswer:@"(sua) sobrinha"],
+                       [[Word alloc] initWithValue:@"おまごさん" andAnswer:@"(seu) neto, (sua) neta"], nil ];
 
                        
     [self nextWord: nil];
@@ -112,13 +112,13 @@
 
 - (IBAction)nextWord: (id)sender {
     selectedWordIndex = arc4random() % ([wordsInDatabase count]);
-    wordLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] original];
+    wordLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] wordValue];
     answerLabel.text = @"";
     
 }
 
 - (IBAction)showTranslationOrOriginal:(id)sender {
-        answerLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] translation];
+        answerLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] answer];
 }
 
 @end

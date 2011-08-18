@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		53307F8513E0F87A0056E423 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
-		53307F8613E0F87A0056E423 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		53307F8513E0F87A0056E423 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Word.h; path = Kotoba/Word.h; sourceTree = "<group>"; };
+		53307F8613E0F87A0056E423 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Word.m; path = Kotoba/Word.m; sourceTree = "<group>"; };
 		53AE38B013FB036300DA2753 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53AE38B313FB03A200DA2753 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,9 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		539D0A4913FCC1B600529E9C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				53307F8513E0F87A0056E423 /* Word.h */,
+				53307F8613E0F87A0056E423 /* Word.m */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
 		53E415F213DF8F9F00B93237 = {
 			isa = PBXGroup;
 			children = (
+				539D0A4913FCC1B600529E9C /* Domain */,
 				53AE38B313FB03A200DA2753 /* web_114x114.png */,
 				53AE38B013FB036300DA2753 /* web_57x57.png */,
 				53E4160713DF8FA000B93237 /* Kotoba */,
@@ -132,8 +142,6 @@
 				53E4161913DF8FA000B93237 /* KotobaViewController.h */,
 				53E4161A13DF8FA000B93237 /* KotobaViewController.m */,
 				53E4160813DF8FA000B93237 /* Supporting Files */,
-				53307F8513E0F87A0056E423 /* Word.h */,
-				53307F8613E0F87A0056E423 /* Word.m */,
 			);
 			path = Kotoba;
 			sourceTree = "<group>";

@@ -10,14 +10,14 @@
 
 @implementation Word
 
-@synthesize original, translation;
+@synthesize wordValue, answer;
 
-- (id)initWithOriginal: (NSString *) originalWord andTranslation: (NSString * )wordTranslation 
+- (id)initWithValue: (NSString *) pWordValue andAnswer: (NSString * )pWordAnswer 
 {
     self = [super init];
     if (self) {
-        self.original = originalWord;
-        self.translation = wordTranslation;
+        self.wordValue = pWordValue;
+        self.answer = pWordAnswer;
         
 
     }

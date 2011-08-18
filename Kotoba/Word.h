@@ -9,15 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface Word : NSObject {
-    NSString *original;
-    NSString *translation;
+    NSString *wordValue;
+    NSString *answer;
     
 }
 
-@property (nonatomic, retain) NSString *original;
+@property (nonatomic, retain) NSString *wordValue;
 
-@property (nonatomic, retain ) NSString *translation;
+@property (nonatomic, retain ) NSString *answer;
 
--(id)initWithOriginal: (NSString *)original andTranslation: (NSString *) translation;
+-(id)initWithValue: (NSString *)wordValue andAnswer: (NSString *) answer;
 
 @end

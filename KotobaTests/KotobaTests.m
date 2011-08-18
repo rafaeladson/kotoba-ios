@@ -7,6 +7,7 @@
 //
 
 #import "KotobaTests.h"
+#import "KotobaViewController.h"
 
 @implementation KotobaTests
 

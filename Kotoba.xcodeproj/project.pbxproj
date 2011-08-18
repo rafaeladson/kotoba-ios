@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		53307F8713E0F87A0056E423 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 53307F8613E0F87A0056E423 /* Word.m */; };
+		53AE38B113FB036300DA2753 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B013FB036300DA2753 /* web_57x57.png */; };
+		53AE38B413FB03A200DA2753 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B313FB03A200DA2753 /* web_114x114.png */; };
 		53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
 		53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
 		53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		53307F8513E0F87A0056E423 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 		53307F8613E0F87A0056E423 /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		53AE38B013FB036300DA2753 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
+		53AE38B313FB03A200DA2753 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +93,8 @@
 		53E415F213DF8F9F00B93237 = {
 			isa = PBXGroup;
 			children = (
+				53AE38B313FB03A200DA2753 /* web_114x114.png */,
+				53AE38B013FB036300DA2753 /* web_57x57.png */,
 				53E4160713DF8FA000B93237 /* Kotoba */,
 				53E4162913DF8FA000B93237 /* KotobaTests */,
 				53E4160013DF8FA000B93237 /* Frameworks */,
@@ -235,6 +241,8 @@
 				53E4160C13DF8FA000B93237 /* InfoPlist.strings in Resources */,
 				53E4161513DF8FA000B93237 /* MainStoryboard_iPhone.storyboard in Resources */,
 				53E4161813DF8FA000B93237 /* MainStoryboard_iPad.storyboard in Resources */,
+				53AE38B113FB036300DA2753 /* web_57x57.png in Resources */,
+				53AE38B413FB03A200DA2753 /* web_114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,10 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFiles</key>
-	<array/>
+	<array>
+		<string>web_57x57.png</string>
+		<string>web_114x114.png</string>
+	</array>
 	<key>CFBundleIdentifier</key>
 	<string>com.rafaeladson.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>

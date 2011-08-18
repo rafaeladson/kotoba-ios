@@ -78,8 +78,6 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -113,28 +111,14 @@
 }
 
 - (IBAction)nextWord: (id)sender {
-    selectedWordIndex = arc4random() % ([wordsInDatabase count] * 2);
-    if ( selectedWordIndex >= [wordsInDatabase count] ) {
-        int translationIndex = selectedWordIndex - [wordsInDatabase count];
-        wordLabel.text = [[wordsInDatabase objectAtIndex:translationIndex] translation];
-    }
-    else {
-        wordLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] original];
-    }
+    selectedWordIndex = arc4random() % ([wordsInDatabase count]);
+    wordLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] original];
     answerLabel.text = @"";
     
 }
 
 - (IBAction)showTranslationOrOriginal:(id)sender {
-    if ( selectedWordIndex >= [wordsInDatabase count] ) {
-        int originalIndex = selectedWordIndex - [wordsInDatabase count];
-        answerLabel.text = [[wordsInDatabase objectAtIndex:originalIndex] original];
-    }
-    else {
         answerLabel.text = [[wordsInDatabase objectAtIndex:selectedWordIndex] translation];
-    }
-    
-    
 }
 
 @end

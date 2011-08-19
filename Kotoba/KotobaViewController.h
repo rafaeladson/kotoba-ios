@@ -7,19 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+@class WordRepository;
+@class Word;
+
 
 @interface KotobaViewController : UIViewController {
     UILabel *wordLabel;
-    NSArray *wordsInDatabase;
-    @private int selectedWordIndex;
     IBOutlet UILabel *answerLabel;
+    WordRepository *repository;
+    Word *selectedWord;
+    
 }
 
 @property (nonatomic, strong) IBOutlet UILabel *wordLabel;
-@property (nonatomic, retain) NSArray *wordsInDatabase;
 - (IBAction)nextWord:(id)sender;
 - (IBAction)showTranslationOrOriginal:(id)sender;
-@property (readwrite, assign) int selectedWordIndex;
 
 
 @end

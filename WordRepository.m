@@ -63,6 +63,7 @@
     if( self ) {
         self->words = newWords;
         self->previousSelectedWord = nil;
+        [self buildRandomOrderedWordsArray];
     }
     
     return self;
@@ -87,6 +88,11 @@
         self->previousSelectedWord = selectedWord;
         return selectedWord;    
     }
+}
+
+-(void) buildRandomOrderedWordsArray {
+    NSArray *randomOrderedWordsTempArray = [self->words sortedArrayUsingSelector:@selector(compareRandomlyWithAnotherWord:) ];
+    self->randomOrderedWords = [ [NSMutableArray alloc] initWithArray:randomOrderedWordsTempArray];
 }
 
 @end

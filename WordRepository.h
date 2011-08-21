@@ -13,6 +13,7 @@
 @interface WordRepository : NSObject {
     NSArray *words;
     Word *previousSelectedWord;
+    NSMutableArray *randomOrderedWords;
     
 }
 
@@ -20,6 +21,9 @@
 - (id)initWithWords:(NSArray *)words;
 - (Word *)getRandomWord;
 
+
+//private
+-(void) buildRandomOrderedWordsArray;
 
 
 @end

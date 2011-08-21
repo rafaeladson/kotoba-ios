@@ -75,18 +75,15 @@
     if ( [self->words count] == 0) {
         return nil;
     }
-    else if( [self->words count] == 1 ) {
-        return [self->words objectAtIndex:0];
-    }
     else {
-        Word *selectedWord = nil;
-        do {
-            int selectedWordIndex = arc4random() % ([self->words count]);
-            selectedWord = [self->words objectAtIndex:selectedWordIndex];
-        } while( [selectedWord isEqual:self->previousSelectedWord] );
+        if ( [self->randomOrderedWords count] == 0 ) {
+            [self buildRandomOrderedWordsArray];
+        }
         
-        self->previousSelectedWord = selectedWord;
-        return selectedWord;    
+        Word *selectedWord = [self->randomOrderedWords objectAtIndex:0];
+        [self->randomOrderedWords removeObjectAtIndex:0];
+        return selectedWord;
+
     }
 }
 

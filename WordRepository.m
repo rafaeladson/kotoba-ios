@@ -63,7 +63,7 @@
     if( self ) {
         self->words = newWords;
         self->previousSelectedWord = nil;
-        [self buildRandomOrderedWordsArray];
+        [self buildRandomizedWordQueue];
     }
     
     return self;
@@ -76,20 +76,20 @@
         return nil;
     }
     else {
-        if ( [self->randomOrderedWords count] == 0 ) {
-            [self buildRandomOrderedWordsArray];
+        if ( [self->randomizedWordQueue count] == 0 ) {
+            [self buildRandomizedWordQueue];
         }
         
-        Word *selectedWord = [self->randomOrderedWords objectAtIndex:0];
-        [self->randomOrderedWords removeObjectAtIndex:0];
+        Word *selectedWord = [self->randomizedWordQueue objectAtIndex:0];
+        [self->randomizedWordQueue removeObjectAtIndex:0];
         return selectedWord;
 
     }
 }
 
--(void) buildRandomOrderedWordsArray {
+-(void) buildRandomizedWordQueue {
     NSArray *randomOrderedWordsTempArray = [self->words sortedArrayUsingSelector:@selector(compareRandomlyWithAnotherWord:) ];
-    self->randomOrderedWords = [ [NSMutableArray alloc] initWithArray:randomOrderedWordsTempArray];
+    self->randomizedWordQueue = [ [NSMutableArray alloc] initWithArray:randomOrderedWordsTempArray];
 }
 
 @end

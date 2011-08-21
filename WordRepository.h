@@ -13,7 +13,7 @@
 @interface WordRepository : NSObject {
     NSArray *words;
     Word *previousSelectedWord;
-    NSMutableArray *randomOrderedWords;
+    NSMutableArray *randomizedWordQueue;
     
 }
 
@@ -23,7 +23,7 @@
 
 
 //private
--(void) buildRandomOrderedWordsArray;
+-(void) buildRandomizedWordQueue;
 
 
 @end

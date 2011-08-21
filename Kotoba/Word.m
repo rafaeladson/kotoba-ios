@@ -7,6 +7,7 @@
 //
 
 #import "Word.h"
+#import <stdio.h>
 
 @implementation Word
 
@@ -23,6 +24,11 @@
     }
     
     return self;
+}
+
+-(NSComparisonResult) compareRandomlyWithAnotherWord:(Word *)anotherWord {
+    int greaterSelector = arc4random() % 2;
+    return (greaterSelector == 0 ) ? NSOrderedAscending : NSOrderedDescending;
 }
 
 

@@ -19,5 +19,6 @@
 @property (nonatomic, retain ) NSString *answer;
 
 -(id)initWithValue: (NSString *)wordValue andAnswer: (NSString *) answer;
+-(NSComparisonResult) compareRandomlyWithAnotherWord:(Word *)anotherWord;
 
 @end

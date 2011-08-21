@@ -17,6 +17,7 @@
 - (void)testShouldNotReturnSameWordTwiceIfMoreThanTwoWords;
 - (void)testShouldReturnSameWordTwiceIfOnlyOneWord;
 - (void)testShouldReturnNilIfHasNoWords;
+- (void)testShouldRestartQueue;
 
 
 @end

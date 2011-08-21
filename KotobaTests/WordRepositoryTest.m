@@ -9,6 +9,7 @@
 #import "WordRepositoryTest.h"
 #import "WordRepository.h"
 #import "Word.h"
+#import "WordStub.h"
 
 @implementation WordRepositoryTest
 
@@ -43,8 +44,21 @@
     WordRepository *repository = [[WordRepository alloc] initWithWords:[NSArray arrayWithObjects:nil]];
     Word *randomWord = [repository getRandomWord];
     STAssertNil(randomWord, @"Word should be nil when there's no word in the array");
+}
+
+- (void)testShouldRestartQueue {
+    WordRepository *repository = [[WordRepository alloc] initWithWords: [NSArray arrayWithObjects:
+                                  [[WordStub alloc] initWithValue:@"Kotoba" andAnswer:@"Word"],
+                                   [[WordStub alloc] initWithValue:@"Inu" andAnswer:@"Dog"], nil] ];
     
+    Word *firstWord = [repository getRandomWord];
+    STAssertEquals(@"Kotoba", [firstWord wordValue], [NSString stringWithFormat:@"%@ should be equal to Kotoba", [firstWord wordValue]]);
     
+    Word *secondWord = [repository getRandomWord];
+    STAssertEquals(@"Inu", [secondWord wordValue], [NSString stringWithFormat:@"%@ should be equal to Inu", [secondWord wordValue]]);
+    
+    Word *firstWordAfterRestartQueue = [repository getRandomWord];
+    STAssertEqualObjects(firstWord, firstWordAfterRestartQueue, @"Queue was not reinitialized correctly");
 }
 
 

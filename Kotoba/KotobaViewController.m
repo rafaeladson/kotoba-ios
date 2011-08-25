@@ -10,6 +10,7 @@
 #import <stdio.h>
 #import "Word.h"
 #import "WordRepository.h"
+#import "KotobaAppDelegate.h"
 
 @implementation KotobaViewController
 @synthesize wordLabel, answerLabel;
@@ -21,12 +22,21 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
+- (void) setRepository:(WordRepository *)newRepository {
+    self->repository = newRepository;
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+
+    KotobaAppDelegate *appDelegate = (KotobaAppDelegate *)[[UIApplication sharedApplication] delegate];
+    appDelegate.rootViewController = self;
+    
     self->repository = [[WordRepository alloc] init];
     self->selectedWord = nil;
                        

@@ -23,6 +23,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *answerLabel;
 - (IBAction)nextWord:(id)sender;
 - (IBAction)showTranslationOrOriginal:(id)sender;
+- (void) setRepository:(WordRepository *)newRepository;
 
 
 

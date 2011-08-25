@@ -10,7 +10,7 @@
 
 @implementation KotobaAppDelegate
 
-@synthesize window = _window;
+@synthesize window = _window, navigationController;
 
 
 - (void)applicationWillResignActive:(UIApplication *)application

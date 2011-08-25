@@ -13,15 +13,17 @@
 
 @interface KotobaViewController : UIViewController {
     UILabel *wordLabel;
-    IBOutlet UILabel *answerLabel;
+    UILabel *answerLabel;
     WordRepository *repository;
     Word *selectedWord;
     
 }
 
 @property (nonatomic, strong) IBOutlet UILabel *wordLabel;
+@property (nonatomic, strong) IBOutlet UILabel *answerLabel;
 - (IBAction)nextWord:(id)sender;
 - (IBAction)showTranslationOrOriginal:(id)sender;
+
 
 
 @end

@@ -13,6 +13,7 @@
 		539D0A4E13FCC48600529E9C /* WordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D0A4C13FCC48600529E9C /* WordRepository.m */; };
 		53AE38B113FB036300DA2753 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B013FB036300DA2753 /* web_57x57.png */; };
 		53AE38B413FB03A200DA2753 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B313FB03A200DA2753 /* web_114x114.png */; };
+		53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */; };
 		53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
 		53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
 		53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
@@ -51,6 +52,9 @@
 		539D0A4C13FCC48600529E9C /* WordRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRepository.m; sourceTree = "<group>"; };
 		53AE38B013FB036300DA2753 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53AE38B313FB03A200DA2753 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
+		53BBF40A14048E9D00F3DAD2 /* WordGameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordGameTest.h; sourceTree = "<group>"; };
+		53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordGameTest.m; sourceTree = "<group>"; };
+		53BBF40D1404932200F3DAD2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,9 +115,19 @@
 			name = Domain;
 			sourceTree = "<group>";
 		};
+		53BBF40814048E6E00F3DAD2 /* ApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				53BBF40A14048E9D00F3DAD2 /* WordGameTest.h */,
+				53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */,
+			);
+			name = ApplicationTests;
+			sourceTree = "<group>";
+		};
 		53E415F213DF8F9F00B93237 = {
 			isa = PBXGroup;
 			children = (
+				53BBF40814048E6E00F3DAD2 /* ApplicationTests */,
 				539D0A4913FCC1B600529E9C /* Domain */,
 				53AE38B313FB03A200DA2753 /* web_114x114.png */,
 				53AE38B013FB036300DA2753 /* web_57x57.png */,
@@ -245,6 +259,7 @@
 		53E415F413DF8F9F00B93237 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0420;
 				ORGANIZATIONNAME = P2D;
 			};
 			buildConfigurationList = 53E415F713DF8F9F00B93237 /* Build configuration list for PBXProject "Kotoba" */;
@@ -253,6 +268,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				pt,
 			);
 			mainGroup = 53E415F213DF8F9F00B93237;
 			productRefGroup = 53E415FE13DF8FA000B93237 /* Products */;
@@ -326,6 +342,7 @@
 				539D0A4E13FCC48600529E9C /* WordRepository.m in Sources */,
 				53F6F17D13FE1AEF00418397 /* WordRepositoryTest.m in Sources */,
 				532E18971400C472005352FD /* WordStub.m in Sources */,
+				53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +369,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				53E4161413DF8FA000B93237 /* en */,
+				53BBF40D1404932200F3DAD2 /* pt */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";

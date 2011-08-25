@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KotobaAppDelegate : UIResponder <UIApplicationDelegate> {
-
+@interface KotobaAppDelegate : UIResponder <UIApplicationDelegate,UINavigationControllerDelegate> {
+    UINavigationController *navigationController;
 
 }
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UINavigationController *navigationController;
+
 
 
 

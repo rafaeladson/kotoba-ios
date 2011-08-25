@@ -12,7 +12,7 @@
 #import "WordRepository.h"
 
 @implementation KotobaViewController
-@synthesize wordLabel;
+@synthesize wordLabel, answerLabel;
 
 
 - (void)didReceiveMemoryWarning

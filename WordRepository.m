@@ -55,6 +55,7 @@
                        [[Word alloc] initWithValue:@"おいごさん" andAnswer:@"(seu) sobrinho"],
                        [[Word alloc] initWithValue:@"めいごさん" andAnswer:@"(sua) sobrinha"],
                        [[Word alloc] initWithValue:@"おまごさん" andAnswer:@"(seu) neto, (sua) neta"], nil ] ];
+    blah
     
 }
 

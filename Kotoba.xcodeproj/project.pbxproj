@@ -22,7 +22,7 @@
 		53E4161213DF8FA000B93237 /* KotobaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */; };
 		53E4161513DF8FA000B93237 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E4161313DF8FA000B93237 /* MainStoryboard_iPhone.storyboard */; };
 		53E4161813DF8FA000B93237 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E4161613DF8FA000B93237 /* MainStoryboard_iPad.storyboard */; };
-		53E4161B13DF8FA000B93237 /* KotobaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4161A13DF8FA000B93237 /* KotobaViewController.m */; };
+		53E4161B13DF8FA000B93237 /* WordGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4161A13DF8FA000B93237 /* WordGameViewController.m */; };
 		53E4162313DF8FA000B93237 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4162213DF8FA000B93237 /* SenTestingKit.framework */; };
 		53E4162413DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
 		53E4162513DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
@@ -67,8 +67,8 @@
 		53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaAppDelegate.m; sourceTree = "<group>"; };
 		53E4161413DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53E4161713DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		53E4161913DF8FA000B93237 /* KotobaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaViewController.h; sourceTree = "<group>"; };
-		53E4161A13DF8FA000B93237 /* KotobaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaViewController.m; sourceTree = "<group>"; };
+		53E4161913DF8FA000B93237 /* WordGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordGameViewController.h; sourceTree = "<group>"; };
+		53E4161A13DF8FA000B93237 /* WordGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WordGameViewController.m; sourceTree = "<group>"; };
 		53E4162113DF8FA000B93237 /* KotobaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4162213DF8FA000B93237 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
@@ -165,8 +165,8 @@
 				53E4161113DF8FA000B93237 /* KotobaAppDelegate.m */,
 				53E4161313DF8FA000B93237 /* MainStoryboard_iPhone.storyboard */,
 				53E4161613DF8FA000B93237 /* MainStoryboard_iPad.storyboard */,
-				53E4161913DF8FA000B93237 /* KotobaViewController.h */,
-				53E4161A13DF8FA000B93237 /* KotobaViewController.m */,
+				53E4161913DF8FA000B93237 /* WordGameViewController.h */,
+				53E4161A13DF8FA000B93237 /* WordGameViewController.m */,
 				53E4160813DF8FA000B93237 /* Supporting Files */,
 			);
 			path = Kotoba;
@@ -328,7 +328,7 @@
 			files = (
 				53E4160E13DF8FA000B93237 /* main.m in Sources */,
 				53E4161213DF8FA000B93237 /* KotobaAppDelegate.m in Sources */,
-				53E4161B13DF8FA000B93237 /* KotobaViewController.m in Sources */,
+				53E4161B13DF8FA000B93237 /* WordGameViewController.m in Sources */,
 				53307F8713E0F87A0056E423 /* Word.m in Sources */,
 				539D0A4D13FCC48600529E9C /* WordRepository.m in Sources */,
 			);
@@ -399,7 +399,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos5.0]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -425,7 +425,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos5.0]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;

@@ -8,7 +8,7 @@
 
 #import "WordGameTest.h"
 #import "KotobaAppDelegate.h"
-#import "KotobaViewController.h"
+#import "WordGameViewController.h"
 #import "WordRepository.h"
 #import "WordStub.h"
 
@@ -24,7 +24,7 @@
 -(void) testShouldShowTranslationAndShowNextWord {
     KotobaAppDelegate *appDelegate = (KotobaAppDelegate *)[[UIApplication sharedApplication] delegate];
     STAssertNotNil(appDelegate.window, @"Could not get reference to main window");
-    KotobaViewController *rootViewController = (KotobaViewController *)appDelegate.rootViewController;
+    WordGameViewController *rootViewController = (WordGameViewController *)appDelegate.rootViewController;
     
     UILabel *wordLabel = rootViewController.wordLabel;
     UILabel *answerLabel = rootViewController.answerLabel;
@@ -32,7 +32,7 @@
     STAssertNotNil(wordLabel.text, @"Could get value for text on rootViewController");
     STAssertEqualObjects(@"", answerLabel.text, @"Answer label should have no value" );
     
-    [rootViewController showTranslationOrOriginal:nil];
+    [rootViewController showAnswer:nil];
     STAssertFalse([answerLabel.text isEqual: @""], @"Answer was not initialized");
     
     [rootViewController setRepository: [[WordRepository alloc] initWithWords:[[NSArray alloc] initWithObjects:
@@ -42,7 +42,7 @@
     STAssertEqualObjects(@"foo", wordLabel.text, @"worldlabel was not set to first word" );
     STAssertEqualObjects(@"", answerLabel.text, @"Answer label should have no value" );
     
-    [rootViewController showTranslationOrOriginal:nil];
+    [rootViewController showAnswer:nil];
     STAssertEqualObjects(@"bar", answerLabel.text, @"Did not show correct translation");
     
 }

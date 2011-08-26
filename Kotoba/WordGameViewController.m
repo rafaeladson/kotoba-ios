@@ -6,13 +6,13 @@
 //  Copyright 2011 P2D. All rights reserved.
 //
 
-#import "KotobaViewController.h"
+#import "WordGameViewController.h"
 #import <stdio.h>
 #import "Word.h"
 #import "WordRepository.h"
 #import "KotobaAppDelegate.h"
 
-@implementation KotobaViewController
+@implementation WordGameViewController
 @synthesize wordLabel, answerLabel;
 
 
@@ -85,7 +85,7 @@
     answerLabel.text = @"";
 }
 
-- (IBAction)showTranslationOrOriginal:(id)sender {
+- (IBAction)showAnswer:(id)sender {
     answerLabel.text = [self->selectedWord answer];
 }
 

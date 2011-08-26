@@ -11,7 +11,7 @@
 @class Word;
 
 
-@interface KotobaViewController : UIViewController {
+@interface WordGameViewController : UIViewController {
     UILabel *wordLabel;
     UILabel *answerLabel;
     WordRepository *repository;
@@ -22,7 +22,7 @@
 @property (nonatomic, strong) IBOutlet UILabel *wordLabel;
 @property (nonatomic, strong) IBOutlet UILabel *answerLabel;
 - (IBAction)nextWord:(id)sender;
-- (IBAction)showTranslationOrOriginal:(id)sender;
+- (IBAction)showAnswer:(id)sender;
 - (void) setRepository:(WordRepository *)newRepository;
 
 

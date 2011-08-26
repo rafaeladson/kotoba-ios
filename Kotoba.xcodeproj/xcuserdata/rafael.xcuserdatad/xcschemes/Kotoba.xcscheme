@@ -36,6 +36,11 @@
                BlueprintName = "KotobaTests"
                ReferencedContainer = "container:Kotoba.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "KotobaTests">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
       <MacroExpansion>

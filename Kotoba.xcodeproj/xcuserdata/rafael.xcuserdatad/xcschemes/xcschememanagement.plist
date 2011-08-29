@@ -4,25 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Copy of Kotoba.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
 		<key>Kotoba.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>KotobaTests copy.xcscheme</key>
+		<key>LogicTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>53D10D92140AE3A700713B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53D10DE9140B345C00713B64</key>
 		<dict>
 			<key>primary</key>
 			<true/>

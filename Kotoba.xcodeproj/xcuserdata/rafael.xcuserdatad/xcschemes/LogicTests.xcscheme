@@ -4,6 +4,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "53D10DE9140B345C00713B64"
+               BuildableName = "KotobaLogicTests.octest"
+               BlueprintName = "KotobaLogicTests"
+               ReferencedContainer = "container:Kotoba.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
@@ -15,9 +31,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "53D10D92140AE3A700713B64"
-               BuildableName = "KotobaTests copy.octest"
-               BlueprintName = "KotobaLogic"
+               BlueprintIdentifier = "53D10DE9140B345C00713B64"
+               BuildableName = "KotobaLogicTests.octest"
+               BlueprintName = "KotobaLogicTests"
                ReferencedContainer = "container:Kotoba.xcodeproj">
             </BuildableReference>
          </TestableReference>

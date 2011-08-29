@@ -58,7 +58,7 @@
     STAssertEquals(@"Inu", [secondWord wordValue], [NSString stringWithFormat:@"%@ should be equal to Inu", [secondWord wordValue]]);
     
     Word *firstWordAfterRestartQueue = [repository getRandomWord];
-    STAssertEqualObjects(secondWord, firstWordAfterRestartQueue, @"Queue was not reinitialized correctly");
+    STAssertEqualObjects(firstWord, firstWordAfterRestartQueue, @"Queue was not reinitialized correctly");
 }
 
 

@@ -14,6 +14,7 @@
 		53AE38B113FB036300DA2753 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B013FB036300DA2753 /* web_57x57.png */; };
 		53AE38B413FB03A200DA2753 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B313FB03A200DA2753 /* web_114x114.png */; };
 		53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */; };
+		53D10DAA140AE40000713B64 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 53307F8613E0F87A0056E423 /* Word.m */; };
 		53E4160213DF8FA000B93237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160113DF8FA000B93237 /* UIKit.framework */; };
 		53E4160413DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
 		53E4160613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
@@ -28,8 +29,6 @@
 		53E4162513DF8FA000B93237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160313DF8FA000B93237 /* Foundation.framework */; };
 		53E4162613DF8FA000B93237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E4160513DF8FA000B93237 /* CoreGraphics.framework */; };
 		53E4162E13DF8FA000B93237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53E4162C13DF8FA000B93237 /* InfoPlist.strings */; };
-		53E4163013DF8FA000B93237 /* KotobaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 53E4162F13DF8FA000B93237 /* KotobaTests.h */; };
-		53E4163213DF8FA000B93237 /* KotobaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E4163113DF8FA000B93237 /* KotobaTests.m */; };
 		53F6F17D13FE1AEF00418397 /* WordRepositoryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F6F17C13FE1AEF00418397 /* WordRepositoryTest.m */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +54,7 @@
 		53BBF40A14048E9D00F3DAD2 /* WordGameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordGameTest.h; sourceTree = "<group>"; };
 		53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordGameTest.m; sourceTree = "<group>"; };
 		53BBF40D1404932200F3DAD2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		53D10DA9140AE3A800713B64 /* KotobaTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KotobaTests copy-Info.plist"; path = "/Users/rafael/dev/fiive/kotoba-ios/KotobaTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,8 +73,6 @@
 		53E4162213DF8FA000B93237 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		53E4162B13DF8FA000B93237 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
 		53E4162D13DF8FA000B93237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		53E4162F13DF8FA000B93237 /* KotobaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaTests.h; sourceTree = "<group>"; };
-		53E4163113DF8FA000B93237 /* KotobaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaTests.m; sourceTree = "<group>"; };
 		53F6F17B13FE1AEF00418397 /* WordRepositoryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordRepositoryTest.h; sourceTree = "<group>"; };
 		53F6F17C13FE1AEF00418397 /* WordRepositoryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordRepositoryTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +133,7 @@
 				53E4162913DF8FA000B93237 /* KotobaTests */,
 				53E4160013DF8FA000B93237 /* Frameworks */,
 				53E415FE13DF8FA000B93237 /* Products */,
+				53D10DA9140AE3A800713B64 /* KotobaTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -187,8 +186,6 @@
 			isa = PBXGroup;
 			children = (
 				53F6F17113FE1A2A00418397 /* Domain */,
-				53E4162F13DF8FA000B93237 /* KotobaTests.h */,
-				53E4163113DF8FA000B93237 /* KotobaTests.m */,
 				53E4162A13DF8FA000B93237 /* Supporting Files */,
 			);
 			path = KotobaTests;
@@ -299,7 +296,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E4162E13DF8FA000B93237 /* InfoPlist.strings in Resources */,
-				53E4163013DF8FA000B93237 /* KotobaTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,11 +334,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53E4163213DF8FA000B93237 /* KotobaTests.m in Sources */,
 				539D0A4E13FCC48600529E9C /* WordRepository.m in Sources */,
 				53F6F17D13FE1AEF00418397 /* WordRepositoryTest.m in Sources */,
 				532E18971400C472005352FD /* WordStub.m in Sources */,
 				53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */,
+				53D10DAA140AE40000713B64 /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

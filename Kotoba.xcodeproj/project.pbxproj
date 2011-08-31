@@ -60,12 +60,13 @@
 		53AE38B313FB03A200DA2753 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53BBF40A14048E9D00F3DAD2 /* WordGameTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WordGameTest.h; path = ../WordGameTest.h; sourceTree = "<group>"; };
 		53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WordGameTest.m; path = ../WordGameTest.m; sourceTree = "<group>"; };
-		53BBF40D1404932200F3DAD2 /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		53D10DA9140AE3A800713B64 /* KotobaTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "KotobaTests copy-Info.plist"; path = "/Users/rafael/dev/fiive/kotoba-ios/KotobaTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		53D10DEA140B345C00713B64 /* KotobaLogicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaLogicTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D10DF0140B345C00713B64 /* KotobaLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaLogicTests-Info.plist"; sourceTree = "<group>"; };
 		53D10DF2140B345C00713B64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53D10DF7140B345C00713B64 /* KotobaLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KotobaLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		53D2F601140DC1F3006D4AFE /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		53D2F602140DC28F006D4AFE /* pt */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = pt; path = pt.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		53E415FD13DF8FA000B93237 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53E4160113DF8FA000B93237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53E4160313DF8FA000B93237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -456,7 +457,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				53E4161413DF8FA000B93237 /* en */,
-				53BBF40D1404932200F3DAD2 /* pt */,
+				53D2F601140DC1F3006D4AFE /* pt */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
@@ -465,6 +466,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				53E4161713DF8FA000B93237 /* en */,
+				53D2F602140DC28F006D4AFE /* pt */,
 			);
 			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
@@ -591,6 +593,7 @@
 				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
 				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -608,6 +611,7 @@
 				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
 				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = NO;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};

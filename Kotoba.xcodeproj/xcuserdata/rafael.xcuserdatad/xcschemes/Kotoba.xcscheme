@@ -27,6 +27,20 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "53D10DE9140B345C00713B64"
+               BuildableName = "KotobaLogicTests.octest"
+               BlueprintName = "KotobaLogicTests"
+               ReferencedContainer = "container:Kotoba.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "53E4162013DF8FA000B93237"
                BuildableName = "KotobaTests.octest"
                BlueprintName = "KotobaTests"

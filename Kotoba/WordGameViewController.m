@@ -8,12 +8,11 @@
 
 #import "WordGameViewController.h"
 #import <stdio.h>
-#import "Word.h"
-#import "WordRepository.h"
 #import "KotobaAppDelegate.h"
 
 @implementation WordGameViewController
-@synthesize wordLabel, answerLabel;
+@synthesize questionMarkLabel, answerView;
+@synthesize editButton;
 
 
 - (void)didReceiveMemoryWarning
@@ -22,26 +21,14 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-- (void) setRepository:(WordRepository *)newRepository {
-    self->repository = newRepository;
-}
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
-
-    KotobaAppDelegate *appDelegate = (KotobaAppDelegate *)[[UIApplication sharedApplication] delegate];
-    appDelegate.rootViewController = self;
-    
-    self->repository = [[WordRepository alloc] init];
-    self->selectedWord = nil;
-                       
-    [self nextWord: nil];
-    
+    [self nextQuestion:nil];
+    self.answerView.text = @"Hello World";
 }
 
 - (void)viewDidUnload
@@ -79,14 +66,22 @@
     }
 }
 
-- (IBAction)nextWord: (id)sender {
-    self->selectedWord = [self->repository getRandomWord];
-    wordLabel.text = [self->selectedWord wordValue];
-    answerLabel.text = @"";
+- (IBAction)nextQuestion:(id)sender {
+    [self hideAnswer];
 }
 
 - (IBAction)showAnswer:(id)sender {
-    answerLabel.text = [self->selectedWord answer];
+    questionMarkLabel.hidden = YES;
+    answerView.hidden = NO;
 }
+
+
+- (void) hideAnswer {
+    NSLog(@"%d,%d", questionMarkLabel.hidden, answerView.hidden);
+    questionMarkLabel.hidden = NO;
+    answerView.hidden = YES;
+    NSLog(@"%d,%d", questionMarkLabel.hidden, answerView.hidden);
+}
+
 
 @end

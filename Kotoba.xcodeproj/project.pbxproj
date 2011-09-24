@@ -14,8 +14,6 @@
 		538BA785140B36DD008C2C22 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 53307F8613E0F87A0056E423 /* Word.m */; };
 		538BA786140B36E2008C2C22 /* WordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D0A4C13FCC48600529E9C /* WordRepository.m */; };
 		538BA787140B3763008C2C22 /* WordStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 532E18961400C472005352FD /* WordStub.m */; };
-		538BA788140B3769008C2C22 /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = 53307F8613E0F87A0056E423 /* Word.m */; };
-		538BA789140B377E008C2C22 /* WordRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 539D0A4C13FCC48600529E9C /* WordRepository.m */; };
 		53AE38B113FB036300DA2753 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B013FB036300DA2753 /* web_57x57.png */; };
 		53AE38B413FB03A200DA2753 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53AE38B313FB03A200DA2753 /* web_114x114.png */; };
 		53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53BBF40B14048E9D00F3DAD2 /* WordGameTest.m */; };
@@ -421,8 +419,6 @@
 			files = (
 				53BBF40C14048E9D00F3DAD2 /* WordGameTest.m in Sources */,
 				538BA787140B3763008C2C22 /* WordStub.m in Sources */,
-				538BA788140B3769008C2C22 /* Word.m in Sources */,
-				538BA789140B377E008C2C22 /* WordRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

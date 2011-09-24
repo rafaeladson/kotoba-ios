@@ -21,29 +21,35 @@
     STAssertNotNil(yourApplicationDelegate, @"UIApplication failed to find the AppDelegate");
 }
 
--(void) testShouldShowTranslationAndShowNextWord {
+-(void) testShouldShowAnswerAndNextQuestion {
     KotobaAppDelegate *appDelegate = (KotobaAppDelegate *)[[UIApplication sharedApplication] delegate];
     STAssertNotNil(appDelegate.window, @"Could not get reference to main window");
     WordGameViewController *rootViewController = (WordGameViewController *)appDelegate.rootViewController;
     
-    UILabel *wordLabel = rootViewController.wordLabel;
-    UILabel *answerLabel = rootViewController.answerLabel;
+    UITextView *answerView = rootViewController.answerView;
+    UILabel *questionMarkLabel = rootViewController.questionMarkLabel;
     
-    STAssertNotNil(wordLabel.text, @"Could get value for text on rootViewController");
-    STAssertEqualObjects(@"", answerLabel.text, @"Answer label should have no value" );
+    questionMarkLabel.hidden = YES;
+    //answerView.text = @"Hello World";
+    //STAssertEqualObjects(answerView.text, @"Hello World", @"Text is right" );
+    //STAssertEquals([questionMarkLabel isHidden], NO, @"Should be wrong");
+    STAssertTrue( questionMarkLabel.isHidden , @"Testing the obvious" );
+    
+    
+    
+    STAssertFalse(questionMarkLabel.hidden, @"Question Mark should be visible when I start the app");
+    STAssertTrue(answerView.hidden, @"The answer is supposed to be hidden in application start");
+    
     
     [rootViewController showAnswer:nil];
-    STAssertFalse([answerLabel.text isEqual: @""], @"Answer was not initialized");
+    STAssertTrue(questionMarkLabel.hidden, @"When I show the answer, question mark should be invisible" );
+    STAssertFalse(answerView.hidden, @"When I show the answer, the textView that holds it should be visible" );
     
-    [rootViewController setRepository: [[WordRepository alloc] initWithWords:[[NSArray alloc] initWithObjects:
-                                                                              [[WordStub alloc] initWithValue:@"foo" andAnswer:@"bar"], nil]]];
-                                                                                                                                           
-    [rootViewController nextWord:nil];
-    STAssertEqualObjects(@"foo", wordLabel.text, @"worldlabel was not set to first word" );
-    STAssertEqualObjects(@"", answerLabel.text, @"Answer label should have no value" );
     
-    [rootViewController showAnswer:nil];
-    STAssertEqualObjects(@"bar", answerLabel.text, @"Did not show correct translation");
+    [rootViewController nextQuestion:nil];
+    STAssertFalse(questionMarkLabel.hidden, @"Question mark should be visible when I show next Question" );
+    STAssertTrue(answerView.hidden, @"The answer should be hidden when user clicked next Question" );
+    
     
 }
 

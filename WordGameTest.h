@@ -16,6 +16,6 @@
 @interface WordGameTest : SenTestCase
 
 - (void)testAppDelegate;    // simple test on application
--(void) testShouldShowTranslationAndShowNextWord;
+-(void) testShouldShowAnswerAndNextQuestion;
 
 @end

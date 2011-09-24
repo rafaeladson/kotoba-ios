@@ -12,18 +12,17 @@
 
 
 @interface WordGameViewController : UIViewController {
-    UILabel *wordLabel;
-    UILabel *answerLabel;
-    WordRepository *repository;
-    Word *selectedWord;
+    UILabel *questionMarkLabel;
+    UITextView *answerView;
     
 }
 
-@property (nonatomic, strong) IBOutlet UILabel *wordLabel;
-@property (nonatomic, strong) IBOutlet UILabel *answerLabel;
-- (IBAction)nextWord:(id)sender;
+@property (nonatomic, strong) IBOutlet UITextView *answerView;
+@property (nonatomic, strong) IBOutlet UILabel *questionMarkLabel;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *editButton;
+- (IBAction)nextQuestion:(id)sender;
+- (void)hideAnswer;
 - (IBAction)showAnswer:(id)sender;
-- (void) setRepository:(WordRepository *)newRepository;
 
 
 

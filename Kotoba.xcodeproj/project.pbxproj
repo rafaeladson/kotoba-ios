@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
+		53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameViewController.m */; };
+		53A59273142E7B6A00C4CE55 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59272142E7B6A00C4CE55 /* iPad.storyboard */; };
+		53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
+		53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
+		53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
+		53CB8E07142E774300518E28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53CB8E05142E774300518E28 /* InfoPlist.strings */; };
+		53CB8E09142E774300518E28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E08142E774300518E28 /* main.m */; };
+		53CB8E0D142E774300518E28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0C142E774300518E28 /* AppDelegate.m */; };
+		53CB8E10142E774300518E28 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
+		53CB8E18142E774300518E28 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E17142E774300518E28 /* SenTestingKit.framework */; };
+		53CB8E19142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
+		53CB8E1A142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
+		53CB8E1B142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
+		53CB8E23142E774300518E28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53CB8E21142E774300518E28 /* InfoPlist.strings */; };
+		53CB8E26142E774300518E28 /* KotobaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E25142E774300518E28 /* KotobaTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53CB8E1C142E774300518E28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53CB8DEF142E774300518E28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53CB8DF7142E774300518E28;
+			remoteInfo = Kotoba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		53A5926F142E799100C4CE55 /* QuestionGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameViewController.h; sourceTree = "<group>"; };
+		53A59270142E799100C4CE55 /* QuestionGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameViewController.m; sourceTree = "<group>"; };
+		53A59272142E7B6A00C4CE55 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		53CB8DF8142E774300518E28 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CB8DFC142E774300518E28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		53CB8DFE142E774300518E28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		53CB8E00142E774300518E28 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		53CB8E04142E774300518E28 /* Kotoba-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Kotoba-Info.plist"; sourceTree = "<group>"; };
+		53CB8E06142E774300518E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53CB8E08142E774300518E28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53CB8E0A142E774300518E28 /* Kotoba-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Kotoba-Prefix.pch"; sourceTree = "<group>"; };
+		53CB8E0B142E774300518E28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53CB8E0C142E774300518E28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53CB8E0F142E774300518E28 /* Kotoba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kotoba.xcdatamodel; sourceTree = "<group>"; };
+		53CB8E16142E774300518E28 /* KotobaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53CB8E17142E774300518E28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		53CB8E20142E774300518E28 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
+		53CB8E22142E774300518E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53CB8E24142E774300518E28 /* KotobaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KotobaTests.h; sourceTree = "<group>"; };
+		53CB8E25142E774300518E28 /* KotobaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KotobaTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53CB8DF5142E774300518E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */,
+				53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */,
+				53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CB8E12142E774300518E28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8E18142E774300518E28 /* SenTestingKit.framework in Frameworks */,
+				53CB8E19142E774300518E28 /* UIKit.framework in Frameworks */,
+				53CB8E1A142E774300518E28 /* Foundation.framework in Frameworks */,
+				53CB8E1B142E774300518E28 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53CB8DED142E774300518E28 = {
+			isa = PBXGroup;
+			children = (
+				53CB8E02142E774300518E28 /* Kotoba */,
+				53CB8E1E142E774300518E28 /* KotobaTests */,
+				53CB8DFB142E774300518E28 /* Frameworks */,
+				53CB8DF9142E774300518E28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53CB8DF9142E774300518E28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8DF8142E774300518E28 /* Kotoba.app */,
+				53CB8E16142E774300518E28 /* KotobaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53CB8DFB142E774300518E28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8DFC142E774300518E28 /* UIKit.framework */,
+				53CB8DFE142E774300518E28 /* Foundation.framework */,
+				53CB8E00142E774300518E28 /* CoreData.framework */,
+				53CB8E17142E774300518E28 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53CB8E02142E774300518E28 /* Kotoba */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8E0B142E774300518E28 /* AppDelegate.h */,
+				53CB8E0C142E774300518E28 /* AppDelegate.m */,
+				53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */,
+				53CB8E03142E774300518E28 /* Supporting Files */,
+				53A59269142E787700C4CE55 /* iPhone.storyboard */,
+				53A5926F142E799100C4CE55 /* QuestionGameViewController.h */,
+				53A59270142E799100C4CE55 /* QuestionGameViewController.m */,
+				53A59272142E7B6A00C4CE55 /* iPad.storyboard */,
+			);
+			path = Kotoba;
+			sourceTree = "<group>";
+		};
+		53CB8E03142E774300518E28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8E04142E774300518E28 /* Kotoba-Info.plist */,
+				53CB8E05142E774300518E28 /* InfoPlist.strings */,
+				53CB8E08142E774300518E28 /* main.m */,
+				53CB8E0A142E774300518E28 /* Kotoba-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53CB8E1E142E774300518E28 /* KotobaTests */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8E24142E774300518E28 /* KotobaTests.h */,
+				53CB8E25142E774300518E28 /* KotobaTests.m */,
+				53CB8E1F142E774300518E28 /* Supporting Files */,
+			);
+			path = KotobaTests;
+			sourceTree = "<group>";
+		};
+		53CB8E1F142E774300518E28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53CB8E20142E774300518E28 /* KotobaTests-Info.plist */,
+				53CB8E21142E774300518E28 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53CB8DF7142E774300518E28 /* Kotoba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53CB8E29142E774300518E28 /* Build configuration list for PBXNativeTarget "Kotoba" */;
+			buildPhases = (
+				53CB8DF4142E774300518E28 /* Sources */,
+				53CB8DF5142E774300518E28 /* Frameworks */,
+				53CB8DF6142E774300518E28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kotoba;
+			productName = Kotoba;
+			productReference = 53CB8DF8142E774300518E28 /* Kotoba.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53CB8E15142E774300518E28 /* KotobaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53CB8E2C142E774300518E28 /* Build configuration list for PBXNativeTarget "KotobaTests" */;
+			buildPhases = (
+				53CB8E11142E774300518E28 /* Sources */,
+				53CB8E12142E774300518E28 /* Frameworks */,
+				53CB8E13142E774300518E28 /* Resources */,
+				53CB8E14142E774300518E28 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53CB8E1D142E774300518E28 /* PBXTargetDependency */,
+			);
+			name = KotobaTests;
+			productName = KotobaTests;
+			productReference = 53CB8E16142E774300518E28 /* KotobaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53CB8DEF142E774300518E28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 53CB8DF2142E774300518E28 /* Build configuration list for PBXProject "Kotoba" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 53CB8DED142E774300518E28;
+			productRefGroup = 53CB8DF9142E774300518E28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53CB8DF7142E774300518E28 /* Kotoba */,
+				53CB8E15142E774300518E28 /* KotobaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53CB8DF6142E774300518E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8E07142E774300518E28 /* InfoPlist.strings in Resources */,
+				53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */,
+				53A59273142E7B6A00C4CE55 /* iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CB8E13142E774300518E28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8E23142E774300518E28 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53CB8E14142E774300518E28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53CB8DF4142E774300518E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8E09142E774300518E28 /* main.m in Sources */,
+				53CB8E0D142E774300518E28 /* AppDelegate.m in Sources */,
+				53CB8E10142E774300518E28 /* Kotoba.xcdatamodeld in Sources */,
+				53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53CB8E11142E774300518E28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53CB8E26142E774300518E28 /* KotobaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53CB8E1D142E774300518E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53CB8DF7142E774300518E28 /* Kotoba */;
+			targetProxy = 53CB8E1C142E774300518E28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53CB8E05142E774300518E28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53CB8E06142E774300518E28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53CB8E21142E774300518E28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53CB8E22142E774300518E28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53CB8E27142E774300518E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		53CB8E28142E774300518E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53CB8E2A142E774300518E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53CB8E2B142E774300518E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		53CB8E2D142E774300518E28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		53CB8E2E142E774300518E28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
+				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53CB8DF2142E774300518E28 /* Build configuration list for PBXProject "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CB8E27142E774300518E28 /* Debug */,
+				53CB8E28142E774300518E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53CB8E29142E774300518E28 /* Build configuration list for PBXNativeTarget "Kotoba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CB8E2A142E774300518E28 /* Debug */,
+				53CB8E2B142E774300518E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53CB8E2C142E774300518E28 /* Build configuration list for PBXNativeTarget "KotobaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CB8E2D142E774300518E28 /* Debug */,
+				53CB8E2E142E774300518E28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53CB8E0F142E774300518E28 /* Kotoba.xcdatamodel */,
+			);
+			currentVersion = 53CB8E0F142E774300518E28 /* Kotoba.xcdatamodel */;
+			path = Kotoba.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 53CB8DEF142E774300518E28 /* Project object */;
+}

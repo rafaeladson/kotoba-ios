@@ -7,8 +7,11 @@
 //
 
 #import "QuestionGameViewController.h"
+#import "AppDelegate.h"
 
 @implementation QuestionGameViewController
+@synthesize answerTextView;
+@synthesize questionMarkLabel;
 
 
 - (void)didReceiveMemoryWarning
@@ -28,16 +31,20 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    delegate.rootViewController = self;
+    
+    [self nextQuestion:nil];
 }
-*/
 
 - (void)viewDidUnload
 {
+    [self setAnswerTextView:nil];
+    [self setQuestionMarkLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -49,4 +56,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)showAnswer:(id)sender {
+    questionMarkLabel.hidden = YES;
+    answerTextView.hidden = NO;
+}
+
+- (IBAction)nextQuestion:(id)sender {
+    questionMarkLabel.hidden = NO;
+    answerTextView.hidden = YES;
+    
+}
 @end

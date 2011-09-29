@@ -17,5 +17,19 @@
          landmarkName = "-testAnswerShouldOnlyAppearWhenUserWantsToSeeIt"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "KotobaTests/QuestionGameViewControllerTest.m"
+         timestampString = "338949994.20744"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "32"
+         endingLineNumber = "32"
+         landmarkName = "-testAnswerShouldOnlyAppearWhenUserWantsToSeeIt"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

@@ -29,16 +29,16 @@
     UITextView *answerTextView = [self->controller answerTextView];
     UILabel *questionMarkLabel = [self->controller questionMarkLabel];
     
-    STAssertTrue(answerTextView.hidden, @"Answer should not be shown at startup");
-    STAssertFalse(questionMarkLabel.hidden, @"Question mark should be shown at startup");
+    STAssertEquals((int)answerTextView.alpha, 0, @"Answer should not be shown at startup");
+    STAssertEquals((int)questionMarkLabel.alpha, 1, @"Question mark should be shown at startup");
     
     [self->controller showAnswer:nil];
-    STAssertTrue(questionMarkLabel.hidden, @"Question mark should have vanished when user wants too see answer");
-    STAssertFalse(answerTextView.hidden, @"Answer should have appeared when user clicked on show answer");
+    STAssertEquals((int)questionMarkLabel.alpha, 0, @"Question mark should have vanished when user wants too see answer");
+    STAssertEquals((int)answerTextView.alpha, 1, @"Answer should have appeared when user clicked on show answer");
     
     [self->controller nextQuestion:nil];
-    STAssertTrue(answerTextView.hidden, @"Answer should not be shown when new question appear");
-    STAssertFalse(questionMarkLabel.hidden, @"Question mark should be shown when new question appear");
+    STAssertEquals((int)answerTextView.alpha, 0, @"Answer should not be shown when new question appear");
+    STAssertEquals((int)questionMarkLabel.alpha, 1, @"Question mark should be shown when new question appear");
     
     
 }

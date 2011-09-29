@@ -57,13 +57,17 @@
 }
 
 - (IBAction)showAnswer:(id)sender {
-    questionMarkLabel.hidden = YES;
-    answerTextView.hidden = NO;
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.5];
+    questionMarkLabel.alpha = 0;
+    answerTextView.alpha = 1;
+    [UIView commitAnimations];
+
 }
 
 - (IBAction)nextQuestion:(id)sender {
-    questionMarkLabel.hidden = NO;
-    answerTextView.hidden = YES;
+    questionMarkLabel.alpha = 1;
+    answerTextView.alpha = 0;
     
 }
 @end

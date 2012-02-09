@@ -8,10 +8,14 @@
 
 #import "QuestionGameViewController.h"
 #import "AppDelegate.h"
+#import "QuestionRepository.h"
+#import "Question.h"
 
 @implementation QuestionGameViewController
+@synthesize questionTextView;
 @synthesize answerTextView;
 @synthesize questionMarkLabel;
+@synthesize repository;
 
 
 - (void)didReceiveMemoryWarning
@@ -36,15 +40,24 @@
 {
     [super viewDidLoad];
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    
+    Question *question = [[Question alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
+    NSArray *questions = [[NSArray alloc] initWithObjects:question , nil];
+    
+    self.repository = [[QuestionRepository alloc] initWithQuestions:questions];
+    
     delegate.rootViewController = self;
     
     [self nextQuestion:nil];
+    
 }
 
 - (void)viewDidUnload
 {
+    [self setQuestionTextView:nil];
     [self setAnswerTextView:nil];
     [self setQuestionMarkLabel:nil];
+    [self setRepository:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -66,6 +79,10 @@
 }
 
 - (IBAction)nextQuestion:(id)sender {
+    Question *question = [self.repository nextRandomQuestion];
+    questionTextView.text = question.value;
+    answerTextView.text = question.answer;
+    
     questionMarkLabel.alpha = 1;
     answerTextView.alpha = 0;
     

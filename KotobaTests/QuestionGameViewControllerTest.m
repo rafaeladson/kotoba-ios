@@ -43,6 +43,10 @@
     
 }
 
+-(void)testFail {
+    STAssertNotNil(nil, @"This test must fail!");
+}
+
 
 
 

@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "KotobaTests/QuestionGameViewControllerTest.m"
-         timestampString = "350434812.529948"
+         timestampString = "350694273.173969"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "46"
-         endingLineNumber = "46"
+         startingLineNumber = "50"
+         endingLineNumber = "50"
          landmarkName = "@implementation QuestionGameViewControllerTest"
          landmarkType = "3">
       </FileBreakpoint>

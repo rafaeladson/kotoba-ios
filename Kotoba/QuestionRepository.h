@@ -10,13 +10,13 @@
 @class Question;
 
 @interface QuestionRepository : NSObject {
-    NSArray *questions;
+    NSMutableArray *questions;
 }
 
 
-@property(nonatomic, retain) NSArray *questions;
+@property(nonatomic, retain) NSMutableArray *questions;
 
 -(QuestionRepository *) initWithQuestions:(NSArray *)questions;
 -(Question *) nextRandomQuestion;
-
+-(void) _sortQuestionsByRandom;
 @end

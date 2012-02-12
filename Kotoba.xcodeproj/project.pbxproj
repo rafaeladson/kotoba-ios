@@ -20,9 +20,9 @@
 		53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A7014E76716005762A0 /* CoreGraphics.framework */; };
 		53B12A7714E76716005762A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53B12A7514E76716005762A0 /* InfoPlist.strings */; };
 		53B12A7914E76716005762A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B12A7814E76716005762A0 /* main.m */; };
-		53B12A8B14E76902005762A0 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A8A14E76902005762A0 /* GHUnitIOS.framework */; };
 		53B12A8F14E76ADB005762A0 /* StackTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B12A8E14E76ADB005762A0 /* StackTest.m */; };
 		53B12A9014E76BEE005762A0 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B12A6014E761FE005762A0 /* Stack.m */; };
+		53B12A9314E838BD005762A0 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A9214E838BD005762A0 /* GHUnitIOS.framework */; };
 		53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
 		53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
 		53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
@@ -70,6 +70,7 @@
 		53B12A7A14E76716005762A0 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		53B12A8A14E76902005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "../gh-unit/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		53B12A8E14E76ADB005762A0 /* StackTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackTest.m; sourceTree = "<group>"; };
+		53B12A9214E838BD005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = lib/GHUnitIOS.framework; sourceTree = "<group>"; };
 		53CB8DF8142E774300518E28 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CB8DFC142E774300518E28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53CB8DFE142E774300518E28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53B12A8B14E76902005762A0 /* GHUnitIOS.framework in Frameworks */,
+				53B12A9314E838BD005762A0 /* GHUnitIOS.framework in Frameworks */,
 				53B12A6E14E76716005762A0 /* UIKit.framework in Frameworks */,
 				53B12A6F14E76716005762A0 /* Foundation.framework in Frameworks */,
 				53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */,
@@ -163,6 +164,7 @@
 		53CB8DED142E774300518E28 = {
 			isa = PBXGroup;
 			children = (
+				53B12A9214E838BD005762A0 /* GHUnitIOS.framework */,
 				53B12A8A14E76902005762A0 /* GHUnitIOS.framework */,
 				53B12A4714E76167005762A0 /* ds */,
 				53CB8E02142E774300518E28 /* Kotoba */,
@@ -468,6 +470,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../gh-unit\"",
+					"\"$(SRCROOT)/lib\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
@@ -484,6 +487,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../gh-unit\"",
+					"\"$(SRCROOT)/lib\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";

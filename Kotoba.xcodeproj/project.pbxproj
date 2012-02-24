@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5302B4D614F6EFC700306E41 /* Intern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5302B4D514F6EFC700306E41 /* Intern.framework */; };
-		5302B4D714F6EFD100306E41 /* Intern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5302B4D514F6EFC700306E41 /* Intern.framework */; };
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
+		53543BBF14F72CBF00326078 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53543BBA14F72CBF00326078 /* libInternIOS-simulator.a */; };
+		53543BC014F72CBF00326078 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53543BBA14F72CBF00326078 /* libInternIOS-simulator.a */; };
+		53543BC114F72CBF00326078 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53543BBB14F72CBF00326078 /* libInternIOS.a */; };
+		53543BC214F72CBF00326078 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53543BBB14F72CBF00326078 /* libInternIOS.a */; };
 		5357D3F914340BFD00642301 /* QuestionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5357D3F814340BFD00642301 /* QuestionListController.m */; };
 		537BC59114E330F90083E0E4 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* Question.m */; };
-		537BC59514E3321C0083E0E4 /* QuestionRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59414E3321C0083E0E4 /* QuestionRepository.m */; };
 		53A0CD871433C2CC00C91662 /* QuestionGameViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A0CD861433C2CC00C91662 /* QuestionGameViewControllerTest.m */; };
 		53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
 		53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameViewController.m */; };
@@ -50,16 +51,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5302B4D514F6EFC700306E41 /* Intern.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intern.framework; path = lib/Intern.framework; sourceTree = "<group>"; };
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		53543BB914F72CBF00326078 /* CircularItemCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularItemCursor.h; sourceTree = "<group>"; };
+		53543BBA14F72CBF00326078 /* libInternIOS-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInternIOS-simulator.a"; sourceTree = "<group>"; };
+		53543BBB14F72CBF00326078 /* libInternIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOS.a; sourceTree = "<group>"; };
+		53543BBC14F72CBF00326078 /* PreConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreConditions.h; sourceTree = "<group>"; };
+		53543BBD14F72CBF00326078 /* RandomIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomIterator.h; sourceTree = "<group>"; };
+		53543BBE14F72CBF00326078 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		5357D3F714340BFD00642301 /* QuestionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionListController.h; sourceTree = "<group>"; };
 		5357D3F814340BFD00642301 /* QuestionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionListController.m; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
-		537BC59314E3321C0083E0E4 /* QuestionRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionRepository.h; sourceTree = "<group>"; };
-		537BC59414E3321C0083E0E4 /* QuestionRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionRepository.m; sourceTree = "<group>"; };
 		53A0CD851433C2CC00C91662 /* QuestionGameViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameViewControllerTest.h; sourceTree = "<group>"; };
 		53A0CD861433C2CC00C91662 /* QuestionGameViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameViewControllerTest.m; sourceTree = "<group>"; };
 		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
@@ -100,7 +104,8 @@
 				53B12A6E14E76716005762A0 /* UIKit.framework in Frameworks */,
 				53B12A6F14E76716005762A0 /* Foundation.framework in Frameworks */,
 				53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */,
-				5302B4D714F6EFD100306E41 /* Intern.framework in Frameworks */,
+				53543BC014F72CBF00326078 /* libInternIOS-simulator.a in Frameworks */,
+				53543BC214F72CBF00326078 /* libInternIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +116,8 @@
 				53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */,
 				53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */,
 				53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */,
-				5302B4D614F6EFC700306E41 /* Intern.framework in Frameworks */,
+				53543BBF14F72CBF00326078 /* libInternIOS-simulator.a in Frameworks */,
+				53543BC114F72CBF00326078 /* libInternIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +135,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53543BB814F72CBF00326078 /* InternIOS */ = {
+			isa = PBXGroup;
+			children = (
+				53543BB914F72CBF00326078 /* CircularItemCursor.h */,
+				53543BBA14F72CBF00326078 /* libInternIOS-simulator.a */,
+				53543BBB14F72CBF00326078 /* libInternIOS.a */,
+				53543BBC14F72CBF00326078 /* PreConditions.h */,
+				53543BBD14F72CBF00326078 /* RandomIterator.h */,
+				53543BBE14F72CBF00326078 /* Stack.h */,
+			);
+			name = InternIOS;
+			path = lib/InternIOS;
+			sourceTree = "<group>";
+		};
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +171,7 @@
 		53CB8DED142E774300518E28 = {
 			isa = PBXGroup;
 			children = (
+				53543BB814F72CBF00326078 /* InternIOS */,
 				53543B8614F715C700326078 /* ic_launcher.png */,
 				53543B8414F7159800326078 /* web_114x114.png */,
 				53543B8214F7158100326078 /* web_57x57.png */,
@@ -177,7 +198,6 @@
 		53CB8DFB142E774300518E28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5302B4D514F6EFC700306E41 /* Intern.framework */,
 				53CB8DFC142E774300518E28 /* UIKit.framework */,
 				53CB8DFE142E774300518E28 /* Foundation.framework */,
 				53CB8E00142E774300518E28 /* CoreData.framework */,
@@ -202,8 +222,6 @@
 				5357D3F814340BFD00642301 /* QuestionListController.m */,
 				537BC58F14E330F90083E0E4 /* Question.h */,
 				537BC59014E330F90083E0E4 /* Question.m */,
-				537BC59314E3321C0083E0E4 /* QuestionRepository.h */,
-				537BC59414E3321C0083E0E4 /* QuestionRepository.m */,
 			);
 			path = Kotoba;
 			sourceTree = "<group>";
@@ -403,7 +421,6 @@
 				53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */,
 				5357D3F914340BFD00642301 /* QuestionListController.m in Sources */,
 				537BC59114E330F90083E0E4 /* Question.m in Sources */,
-				537BC59514E3321C0083E0E4 /* QuestionRepository.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +482,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/InternIOS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,6 +503,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
 				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/lib/InternIOS\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -555,6 +580,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/InternIOS\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -574,6 +600,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
+					"\"$(SRCROOT)/lib/InternIOS\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

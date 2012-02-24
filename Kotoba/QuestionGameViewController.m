@@ -8,14 +8,20 @@
 
 #import "QuestionGameViewController.h"
 #import "AppDelegate.h"
-#import "QuestionRepository.h"
 #import "Question.h"
+#import "CircularItemCursor.h"
 
+@interface QuestionGameViewController() 
+
+@property (strong, nonatomic) CircularItemCursor *cursor;
+
+@end
 @implementation QuestionGameViewController
 @synthesize questionTextView;
 @synthesize answerTextView;
 @synthesize questionMarkLabel;
-@synthesize repository;
+@synthesize cursor = _cursor;
+
 
 
 - (void)didReceiveMemoryWarning
@@ -44,7 +50,7 @@
     Question *question = [[Question alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
     NSArray *questions = [[NSArray alloc] initWithObjects:question , nil];
     
-    self.repository = [[QuestionRepository alloc] initWithQuestions:questions];
+    self.cursor = [[CircularItemCursor alloc] initWithArray:questions];
     
     delegate.rootViewController = self;
     
@@ -57,7 +63,7 @@
     [self setQuestionTextView:nil];
     [self setAnswerTextView:nil];
     [self setQuestionMarkLabel:nil];
-    [self setRepository:nil];
+    [self setCursor:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -80,7 +86,7 @@
 }
 
 - (IBAction)nextQuestion:(id)sender {
-    Question *question = [self.repository nextRandomQuestion];
+    Question *question = self.cursor.currentItem;
     questionTextView.text = question.value;
     answerTextView.text = question.answer;
     

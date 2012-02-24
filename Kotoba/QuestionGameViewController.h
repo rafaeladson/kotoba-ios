@@ -13,14 +13,12 @@
     UITextView *questionTextView;
     UITextView *answerTextView;
     UILabel *questMarkLabel;
-    QuestionRepository *repository;
     
 }
 
 @property (strong, nonatomic) IBOutlet UITextView *questionTextView;
 @property (strong, nonatomic) IBOutlet UITextView *answerTextView;
 @property (strong, nonatomic) IBOutlet UILabel *questionMarkLabel;
-@property (strong, nonatomic) QuestionRepository *repository;
 - (IBAction)showAnswer:(id)sender;
 - (IBAction)nextQuestion:(id)sender;
 

@@ -8,13 +8,15 @@
 
 #import "QuestionGameViewController.h"
 #import "AppDelegate.h"
-#import "Question.h"
+#import "OldQuestion.h"
 #import "CircularItemCursor.h"
+
 
 
 @interface QuestionGameViewController() 
 
 @property (strong, nonatomic) CircularItemCursor *cursor;
+-(void) addSwipeLeftRecognizer;
 
 @end
 @implementation QuestionGameViewController
@@ -48,7 +50,9 @@
     [super viewDidLoad];
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
-    Question *question = [[Question alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
+    [self addSwipeLeftRecognizer];
+    
+    OldQuestion *question = [[OldQuestion alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
     NSArray *questions = [[NSArray alloc] initWithObjects:question , nil];
     
     self.cursor = [[CircularItemCursor alloc] initWithArray:questions];
@@ -87,7 +91,7 @@
 }
 
 - (IBAction)nextQuestion:(id)sender {
-    Question *question = self.cursor.currentItem;
+    OldQuestion *question = self.cursor.currentItem;
     questionTextView.text = question.value;
     answerTextView.text = question.answer;
     
@@ -101,7 +105,17 @@
         [self showAnswer:nil];
     }
     
+    
+    
     [super touchesBegan:touches withEvent:event];
 }
+
+-(void) addSwipeLeftRecognizer {
+    UISwipeGestureRecognizer *swipeLeftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(nextQuestion:)];
+    swipeLeftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [self.view addGestureRecognizer:swipeLeftRecognizer];
+}
+
+
 
 @end

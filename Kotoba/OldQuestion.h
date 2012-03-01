@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Question : NSObject {
+@interface OldQuestion : NSObject {
     NSString *value;
     NSString *answer;
 }
@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSString *answer;
 
 
--(Question *) initWithValue:(NSString *)value andAnswer:(NSString *)answer;
+-(OldQuestion *) initWithValue:(NSString *)value andAnswer:(NSString *)answer;
 
 
 

@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "Question.h"
+#import "OldQuestion.h"
 
-@implementation Question
+@implementation OldQuestion
 
 
 @synthesize value, answer;
 
--(Question *) initWithValue:(NSString *)valueAttr andAnswer:(NSString *)answerAttr {
+-(OldQuestion *) initWithValue:(NSString *)valueAttr andAnswer:(NSString *)answerAttr {
     self.value = valueAttr;
     self.answer = answerAttr;
     return self;

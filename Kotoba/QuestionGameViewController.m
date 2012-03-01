@@ -11,6 +11,7 @@
 #import "Question.h"
 #import "CircularItemCursor.h"
 
+
 @interface QuestionGameViewController() 
 
 @property (strong, nonatomic) CircularItemCursor *cursor;
@@ -94,4 +95,13 @@
     answerTextView.alpha = 0;
     
 }
+
+-(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if (CGRectContainsPoint(questionMarkLabel.frame, [[[event allTouches] anyObject] locationInView:self.view])) {
+        [self showAnswer:nil];
+    }
+    
+    [super touchesBegan:touches withEvent:event];
+}
+
 @end

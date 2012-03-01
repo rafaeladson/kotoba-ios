@@ -38,6 +38,7 @@
 		53CB8E1A142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
 		53CB8E1B142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
 		53CB8E23142E774300518E28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53CB8E21142E774300518E28 /* InfoPlist.strings */; };
+		53D7E9C115002F6800D367EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A7014E76716005762A0 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D7E9C115002F6800D367EC /* CoreGraphics.framework in Frameworks */,
 				53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */,
 				53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */,
 				53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */,
@@ -215,11 +217,8 @@
 				53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */,
 				53CB8E03142E774300518E28 /* Supporting Files */,
 				53A59269142E787700C4CE55 /* iPhone.storyboard */,
-				53A5926F142E799100C4CE55 /* QuestionGameViewController.h */,
-				53A59270142E799100C4CE55 /* QuestionGameViewController.m */,
+				53D7E9C015002B5F00D367EC /* question */,
 				53A59272142E7B6A00C4CE55 /* iPad.storyboard */,
-				5357D3F714340BFD00642301 /* QuestionListController.h */,
-				5357D3F814340BFD00642301 /* QuestionListController.m */,
 				537BC58F14E330F90083E0E4 /* Question.h */,
 				537BC59014E330F90083E0E4 /* Question.m */,
 			);
@@ -254,6 +253,17 @@
 				53CB8E21142E774300518E28 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53D7E9C015002B5F00D367EC /* question */ = {
+			isa = PBXGroup;
+			children = (
+				53A5926F142E799100C4CE55 /* QuestionGameViewController.h */,
+				53A59270142E799100C4CE55 /* QuestionGameViewController.m */,
+				5357D3F714340BFD00642301 /* QuestionListController.h */,
+				5357D3F814340BFD00642301 /* QuestionListController.m */,
+			);
+			name = question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

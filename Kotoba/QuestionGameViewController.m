@@ -105,8 +105,6 @@
         [self showAnswer:nil];
     }
     
-    
-    
     [super touchesBegan:touches withEvent:event];
 }
 

@@ -7,27 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		532F7A5615004CC70013BD3A /* QuestionEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* QuestionEditViewController.m */; };
-		532F7A5715004CC70013BD3A /* QuestionEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* QuestionEditViewController.m */; };
+		532F7A5615004CC70013BD3A /* EditQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* EditQuestionController.m */; };
+		532F7A5715004CC70013BD3A /* EditQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* EditQuestionController.m */; };
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
-		5357D3F914340BFD00642301 /* QuestionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5357D3F814340BFD00642301 /* QuestionListController.m */; };
 		537BC59114E330F90083E0E4 /* OldQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* OldQuestion.m */; };
-		53A0CD871433C2CC00C91662 /* QuestionGameViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A0CD861433C2CC00C91662 /* QuestionGameViewControllerTest.m */; };
 		53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
-		53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameViewController.m */; };
+		53A59271142E799100C4CE55 /* QuestionGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameController.m */; };
 		53A59273142E7B6A00C4CE55 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59272142E7B6A00C4CE55 /* iPad.storyboard */; };
-		53AE50B915004BCA002748BF /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AE50B315004BCA002748BF /* libInternIOS-simulator.a */; };
-		53AE50BA15004BCA002748BF /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AE50B315004BCA002748BF /* libInternIOS-simulator.a */; };
-		53AE50BB15004BCA002748BF /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AE50B415004BCA002748BF /* libInternIOS.a */; };
-		53AE50BC15004BCA002748BF /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AE50B415004BCA002748BF /* libInternIOS.a */; };
 		53B12A6E14E76716005762A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
 		53B12A6F14E76716005762A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
 		53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A7014E76716005762A0 /* CoreGraphics.framework */; };
 		53B12A7714E76716005762A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53B12A7514E76716005762A0 /* InfoPlist.strings */; };
 		53B12A7914E76716005762A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B12A7814E76716005762A0 /* main.m */; };
 		53B12A9314E838BD005762A0 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A9214E838BD005762A0 /* GHUnitIOS.framework */; };
+		53C29E971501AF75007C9734 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
+		53C29EAC1501C396007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
+		53C29EAD1501C396007C9734 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA71501C396007C9734 /* libInternIOS.a */; };
+		53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
+		53C29EAF1501C3A6007C9734 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA71501C396007C9734 /* libInternIOS.a */; };
+		53C29EB01501C77A007C9734 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
+		53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EB21502AEF7007C9734 /* libOCMock.a */; };
+		53C29EBC1502B741007C9734 /* ListQuestionsControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */; };
+		53C29EC51502F3F7007C9734 /* ListQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EC41502F3F7007C9734 /* ListQuestionsController.m */; };
+		53C29EC61502F3F7007C9734 /* ListQuestionsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EC41502F3F7007C9734 /* ListQuestionsController.m */; };
+		53C29EC91502FBF9007C9734 /* QuestionGameControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */; };
+		53C29ECA1502FE1A007C9734 /* QuestionGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameController.m */; };
+		53C29ECB1502FEBD007C9734 /* OldQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* OldQuestion.m */; };
 		53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
 		53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
 		53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
@@ -35,11 +42,8 @@
 		53CB8E09142E774300518E28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E08142E774300518E28 /* main.m */; };
 		53CB8E0D142E774300518E28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0C142E774300518E28 /* AppDelegate.m */; };
 		53CB8E10142E774300518E28 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
-		53CB8E18142E774300518E28 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E17142E774300518E28 /* SenTestingKit.framework */; };
-		53CB8E19142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
-		53CB8E1A142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
-		53CB8E1B142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
-		53CB8E23142E774300518E28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53CB8E21142E774300518E28 /* InfoPlist.strings */; };
+		53CBAFBE15018EFA00728A7D /* EditQuestionControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */; };
+		53CBAFC415018F9500728A7D /* libInternIOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CBAFC215018F9500728A7D /* libInternIOSTest.a */; };
 		53D7E9C115002F6800D367EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A7014E76716005762A0 /* CoreGraphics.framework */; };
 		53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
 		53D7E9C51500345300D367EC /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7E9C41500345200D367EC /* Question.m */; };
@@ -49,42 +53,18 @@
 		53D7E9DE15003C4600D367EC /* UI.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53D7E9DC15003C4600D367EC /* UI.strings */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		53CB8E1C142E774300518E28 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 53CB8DEF142E774300518E28 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53CB8DF7142E774300518E28;
-			remoteInfo = Kotoba;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		532F7A5415004CC70013BD3A /* QuestionEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionEditViewController.h; sourceTree = "<group>"; };
-		532F7A5515004CC70013BD3A /* QuestionEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionEditViewController.m; sourceTree = "<group>"; };
+		532F7A5415004CC70013BD3A /* EditQuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditQuestionController.h; sourceTree = "<group>"; };
+		532F7A5515004CC70013BD3A /* EditQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionController.m; sourceTree = "<group>"; };
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		5357D3F714340BFD00642301 /* QuestionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionListController.h; sourceTree = "<group>"; };
-		5357D3F814340BFD00642301 /* QuestionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionListController.m; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* OldQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldQuestion.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* OldQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldQuestion.m; sourceTree = "<group>"; };
-		53A0CD851433C2CC00C91662 /* QuestionGameViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameViewControllerTest.h; sourceTree = "<group>"; };
-		53A0CD861433C2CC00C91662 /* QuestionGameViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameViewControllerTest.m; sourceTree = "<group>"; };
 		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
-		53A5926F142E799100C4CE55 /* QuestionGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameViewController.h; sourceTree = "<group>"; };
-		53A59270142E799100C4CE55 /* QuestionGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameViewController.m; sourceTree = "<group>"; };
+		53A5926F142E799100C4CE55 /* QuestionGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameController.h; sourceTree = "<group>"; };
+		53A59270142E799100C4CE55 /* QuestionGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameController.m; sourceTree = "<group>"; };
 		53A59272142E7B6A00C4CE55 /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
-		53AE50AF15004BCA002748BF /* AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelper.h; sourceTree = "<group>"; };
-		53AE50B015004BCA002748BF /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		53AE50B115004BCA002748BF /* CircularItemCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularItemCursor.h; sourceTree = "<group>"; };
-		53AE50B215004BCA002748BF /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		53AE50B315004BCA002748BF /* libInternIOS-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInternIOS-simulator.a"; sourceTree = "<group>"; };
-		53AE50B415004BCA002748BF /* libInternIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOS.a; sourceTree = "<group>"; };
-		53AE50B515004BCA002748BF /* PreConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreConditions.h; sourceTree = "<group>"; };
-		53AE50B615004BCA002748BF /* RandomIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomIterator.h; sourceTree = "<group>"; };
-		53AE50B715004BCA002748BF /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		53AE50B815004BCA002748BF /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		53B12A6C14E76716005762A0 /* UnitTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B12A7014E76716005762A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		53B12A7414E76716005762A0 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
@@ -93,6 +73,27 @@
 		53B12A7A14E76716005762A0 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		53B12A8A14E76902005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "../gh-unit/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		53B12A9214E838BD005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = lib/GHUnitIOS.framework; sourceTree = "<group>"; };
+		53C29EA21501C396007C9734 /* AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelper.h; sourceTree = "<group>"; };
+		53C29EA31501C396007C9734 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		53C29EA41501C396007C9734 /* CircularItemCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularItemCursor.h; sourceTree = "<group>"; };
+		53C29EA51501C396007C9734 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		53C29EA61501C396007C9734 /* libInternIOS-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInternIOS-simulator.a"; sourceTree = "<group>"; };
+		53C29EA71501C396007C9734 /* libInternIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOS.a; sourceTree = "<group>"; };
+		53C29EA81501C396007C9734 /* PreConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreConditions.h; sourceTree = "<group>"; };
+		53C29EA91501C396007C9734 /* RandomIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomIterator.h; sourceTree = "<group>"; };
+		53C29EAA1501C396007C9734 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		53C29EAB1501C396007C9734 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		53C29EB21502AEF7007C9734 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
+		53C29EB31502AEF7007C9734 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		53C29EB41502AEF7007C9734 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		53C29EB51502AEF7007C9734 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
+		53C29EB61502AEF7007C9734 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
+		53C29EB71502AEF7007C9734 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
+		53C29EB81502AEF7007C9734 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListQuestionsControllerTest.m; sourceTree = "<group>"; };
+		53C29EC31502F3F7007C9734 /* ListQuestionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListQuestionsController.h; sourceTree = "<group>"; };
+		53C29EC41502F3F7007C9734 /* ListQuestionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListQuestionsController.m; sourceTree = "<group>"; };
+		53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameControllerTest.m; sourceTree = "<group>"; };
 		53CB8DF8142E774300518E28 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CB8DFC142E774300518E28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53CB8DFE142E774300518E28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -104,10 +105,11 @@
 		53CB8E0B142E774300518E28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		53CB8E0C142E774300518E28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		53CB8E0F142E774300518E28 /* Kotoba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kotoba.xcdatamodel; sourceTree = "<group>"; };
-		53CB8E16142E774300518E28 /* KotobaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CB8E17142E774300518E28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		53CB8E20142E774300518E28 /* KotobaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KotobaTests-Info.plist"; sourceTree = "<group>"; };
-		53CB8E22142E774300518E28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionControllerTest.m; sourceTree = "<group>"; };
+		53CBAFC115018F9500728A7D /* DataManagerBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManagerBaseTest.h; sourceTree = "<group>"; };
+		53CBAFC215018F9500728A7D /* libInternIOSTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOSTest.a; sourceTree = "<group>"; };
+		53CBAFC315018F9500728A7D /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
 		53D7E9C31500345200D367EC /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		53D7E9C41500345200D367EC /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		53D7E9CD15003ADA00D367EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -125,8 +127,10 @@
 				53B12A6F14E76716005762A0 /* Foundation.framework in Frameworks */,
 				53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */,
 				53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */,
-				53AE50BA15004BCA002748BF /* libInternIOS-simulator.a in Frameworks */,
-				53AE50BC15004BCA002748BF /* libInternIOS.a in Frameworks */,
+				53CBAFC415018F9500728A7D /* libInternIOSTest.a in Frameworks */,
+				53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */,
+				53C29EAF1501C3A6007C9734 /* libInternIOS.a in Frameworks */,
+				53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,47 +142,21 @@
 				53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */,
 				53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */,
 				53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */,
-				53AE50B915004BCA002748BF /* libInternIOS-simulator.a in Frameworks */,
-				53AE50BB15004BCA002748BF /* libInternIOS.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53CB8E12142E774300518E28 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53CB8E18142E774300518E28 /* SenTestingKit.framework in Frameworks */,
-				53CB8E19142E774300518E28 /* UIKit.framework in Frameworks */,
-				53CB8E1A142E774300518E28 /* Foundation.framework in Frameworks */,
-				53CB8E1B142E774300518E28 /* CoreData.framework in Frameworks */,
+				53C29EAC1501C396007C9734 /* libInternIOS-simulator.a in Frameworks */,
+				53C29EAD1501C396007C9734 /* libInternIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53AE50AE15004BCA002748BF /* InternIOS */ = {
-			isa = PBXGroup;
-			children = (
-				53AE50AF15004BCA002748BF /* AlertHelper.h */,
-				53AE50B015004BCA002748BF /* BaseTableViewController.h */,
-				53AE50B115004BCA002748BF /* CircularItemCursor.h */,
-				53AE50B215004BCA002748BF /* DataManager.h */,
-				53AE50B315004BCA002748BF /* libInternIOS-simulator.a */,
-				53AE50B415004BCA002748BF /* libInternIOS.a */,
-				53AE50B515004BCA002748BF /* PreConditions.h */,
-				53AE50B615004BCA002748BF /* RandomIterator.h */,
-				53AE50B715004BCA002748BF /* Stack.h */,
-				53AE50B815004BCA002748BF /* UIPlaceHolderTextView.h */,
-			);
-			name = InternIOS;
-			path = lib/InternIOS;
-			sourceTree = "<group>";
-		};
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				53B12A7314E76716005762A0 /* Supporting Files */,
+				53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */,
+				53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */,
+				53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -194,17 +172,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		53C29EA11501C396007C9734 /* InternIOS */ = {
+			isa = PBXGroup;
+			children = (
+				53C29EA21501C396007C9734 /* AlertHelper.h */,
+				53C29EA31501C396007C9734 /* BaseTableViewController.h */,
+				53C29EA41501C396007C9734 /* CircularItemCursor.h */,
+				53C29EA51501C396007C9734 /* DataManager.h */,
+				53C29EA61501C396007C9734 /* libInternIOS-simulator.a */,
+				53C29EA71501C396007C9734 /* libInternIOS.a */,
+				53C29EA81501C396007C9734 /* PreConditions.h */,
+				53C29EA91501C396007C9734 /* RandomIterator.h */,
+				53C29EAA1501C396007C9734 /* Stack.h */,
+				53C29EAB1501C396007C9734 /* UIPlaceHolderTextView.h */,
+			);
+			name = InternIOS;
+			path = lib/InternIOS;
+			sourceTree = "<group>";
+		};
+		53C29EB11502AEF7007C9734 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				53C29EB21502AEF7007C9734 /* libOCMock.a */,
+				53C29EB31502AEF7007C9734 /* NSNotificationCenter+OCMAdditions.h */,
+				53C29EB41502AEF7007C9734 /* OCMArg.h */,
+				53C29EB51502AEF7007C9734 /* OCMConstraint.h */,
+				53C29EB61502AEF7007C9734 /* OCMock.h */,
+				53C29EB71502AEF7007C9734 /* OCMockObject.h */,
+				53C29EB81502AEF7007C9734 /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			path = lib/OCMock;
+			sourceTree = "<group>";
+		};
 		53CB8DED142E774300518E28 = {
 			isa = PBXGroup;
 			children = (
-				53AE50AE15004BCA002748BF /* InternIOS */,
+				53C29EB11502AEF7007C9734 /* OCMock */,
+				53C29EA11501C396007C9734 /* InternIOS */,
+				53CBAFC015018F9500728A7D /* InternIOSTest */,
 				53543B8614F715C700326078 /* ic_launcher.png */,
 				53543B8414F7159800326078 /* web_114x114.png */,
 				53543B8214F7158100326078 /* web_57x57.png */,
 				53B12A9214E838BD005762A0 /* GHUnitIOS.framework */,
 				53B12A8A14E76902005762A0 /* GHUnitIOS.framework */,
 				53CB8E02142E774300518E28 /* Kotoba */,
-				53CB8E1E142E774300518E28 /* KotobaTests */,
 				53B12A7214E76716005762A0 /* UnitTests */,
 				53CB8DFB142E774300518E28 /* Frameworks */,
 				53CB8DF9142E774300518E28 /* Products */,
@@ -215,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				53CB8DF8142E774300518E28 /* Kotoba.app */,
-				53CB8E16142E774300518E28 /* KotobaTests.octest */,
 				53B12A6C14E76716005762A0 /* UnitTests.app */,
 			);
 			name = Products;
@@ -261,23 +272,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		53CB8E1E142E774300518E28 /* KotobaTests */ = {
+		53CBAFC015018F9500728A7D /* InternIOSTest */ = {
 			isa = PBXGroup;
 			children = (
-				53CB8E1F142E774300518E28 /* Supporting Files */,
-				53A0CD851433C2CC00C91662 /* QuestionGameViewControllerTest.h */,
-				53A0CD861433C2CC00C91662 /* QuestionGameViewControllerTest.m */,
+				53CBAFC115018F9500728A7D /* DataManagerBaseTest.h */,
+				53CBAFC215018F9500728A7D /* libInternIOSTest.a */,
+				53CBAFC315018F9500728A7D /* ViewHelper.h */,
 			);
-			path = KotobaTests;
-			sourceTree = "<group>";
-		};
-		53CB8E1F142E774300518E28 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				53CB8E20142E774300518E28 /* KotobaTests-Info.plist */,
-				53CB8E21142E774300518E28 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = InternIOSTest;
+			path = lib/InternIOSTest;
 			sourceTree = "<group>";
 		};
 		53D7E9C015002B5F00D367EC /* question */ = {
@@ -285,12 +288,12 @@
 			children = (
 				53D7E9C31500345200D367EC /* Question.h */,
 				53D7E9C41500345200D367EC /* Question.m */,
-				53A5926F142E799100C4CE55 /* QuestionGameViewController.h */,
-				53A59270142E799100C4CE55 /* QuestionGameViewController.m */,
-				5357D3F714340BFD00642301 /* QuestionListController.h */,
-				5357D3F814340BFD00642301 /* QuestionListController.m */,
-				532F7A5415004CC70013BD3A /* QuestionEditViewController.h */,
-				532F7A5515004CC70013BD3A /* QuestionEditViewController.m */,
+				53A5926F142E799100C4CE55 /* QuestionGameController.h */,
+				53A59270142E799100C4CE55 /* QuestionGameController.m */,
+				532F7A5415004CC70013BD3A /* EditQuestionController.h */,
+				532F7A5515004CC70013BD3A /* EditQuestionController.m */,
+				53C29EC31502F3F7007C9734 /* ListQuestionsController.h */,
+				53C29EC41502F3F7007C9734 /* ListQuestionsController.m */,
 			);
 			name = question;
 			sourceTree = "<group>";
@@ -343,25 +346,6 @@
 			productReference = 53CB8DF8142E774300518E28 /* Kotoba.app */;
 			productType = "com.apple.product-type.application";
 		};
-		53CB8E15142E774300518E28 /* KotobaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53CB8E2C142E774300518E28 /* Build configuration list for PBXNativeTarget "KotobaTests" */;
-			buildPhases = (
-				53CB8E11142E774300518E28 /* Sources */,
-				53CB8E12142E774300518E28 /* Frameworks */,
-				53CB8E13142E774300518E28 /* Resources */,
-				53CB8E14142E774300518E28 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				53CB8E1D142E774300518E28 /* PBXTargetDependency */,
-			);
-			name = KotobaTests;
-			productName = KotobaTests;
-			productReference = 53CB8E16142E774300518E28 /* KotobaTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -383,7 +367,6 @@
 			projectRoot = "";
 			targets = (
 				53CB8DF7142E774300518E28 /* Kotoba */,
-				53CB8E15142E774300518E28 /* KotobaTests */,
 				53B12A6B14E76716005762A0 /* UnitTests */,
 			);
 		};
@@ -395,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53B12A7714E76716005762A0 /* InfoPlist.strings in Resources */,
+				53C29E971501AF75007C9734 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,14 +395,6 @@
 				53D7E9D015003ADA00D367EC /* InfoPlist.strings in Resources */,
 				53D7E9D115003ADA00D367EC /* Localizable.strings in Resources */,
 				53D7E9DE15003C4600D367EC /* UI.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53CB8E13142E774300518E28 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53CB8E23142E774300518E28 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,19 +415,6 @@
 			shellScript = "sh RunTests.sh";
 			showEnvVarsInLog = 0;
 		};
-		53CB8E14142E774300518E28 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -461,7 +424,14 @@
 			files = (
 				53B12A7914E76716005762A0 /* main.m in Sources */,
 				53D7E9C61500345300D367EC /* Question.m in Sources */,
-				532F7A5715004CC70013BD3A /* QuestionEditViewController.m in Sources */,
+				532F7A5715004CC70013BD3A /* EditQuestionController.m in Sources */,
+				53CBAFBE15018EFA00728A7D /* EditQuestionControllerTest.m in Sources */,
+				53C29EB01501C77A007C9734 /* Kotoba.xcdatamodeld in Sources */,
+				53C29EBC1502B741007C9734 /* ListQuestionsControllerTest.m in Sources */,
+				53C29EC61502F3F7007C9734 /* ListQuestionsController.m in Sources */,
+				53C29EC91502FBF9007C9734 /* QuestionGameControllerTest.m in Sources */,
+				53C29ECA1502FE1A007C9734 /* QuestionGameController.m in Sources */,
+				53C29ECB1502FEBD007C9734 /* OldQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,31 +442,15 @@
 				53CB8E09142E774300518E28 /* main.m in Sources */,
 				53CB8E0D142E774300518E28 /* AppDelegate.m in Sources */,
 				53CB8E10142E774300518E28 /* Kotoba.xcdatamodeld in Sources */,
-				53A59271142E799100C4CE55 /* QuestionGameViewController.m in Sources */,
-				5357D3F914340BFD00642301 /* QuestionListController.m in Sources */,
+				53A59271142E799100C4CE55 /* QuestionGameController.m in Sources */,
 				537BC59114E330F90083E0E4 /* OldQuestion.m in Sources */,
 				53D7E9C51500345300D367EC /* Question.m in Sources */,
-				532F7A5615004CC70013BD3A /* QuestionEditViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53CB8E11142E774300518E28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53A0CD871433C2CC00C91662 /* QuestionGameViewControllerTest.m in Sources */,
+				532F7A5615004CC70013BD3A /* EditQuestionController.m in Sources */,
+				53C29EC51502F3F7007C9734 /* ListQuestionsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		53CB8E1D142E774300518E28 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53CB8DF7142E774300518E28 /* Kotoba */;
-			targetProxy = 53CB8E1C142E774300518E28 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		53B12A7514E76716005762A0 /* InfoPlist.strings */ = {
@@ -511,14 +465,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				53CB8E06142E774300518E28 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		53CB8E21142E774300518E28 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				53CB8E22142E774300518E28 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -565,6 +511,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/InternIOS\"",
+					"\"$(SRCROOT)/lib/InternIOSTest\"",
+					"\"$(SRCROOT)/lib/OCMock\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -586,6 +534,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib/InternIOS\"",
+					"\"$(SRCROOT)/lib/InternIOSTest\"",
+					"\"$(SRCROOT)/lib/OCMock\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -687,40 +637,6 @@
 			};
 			name = Release;
 		};
-		53CB8E2D142E774300518E28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
-				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		53CB8E2E142E774300518E28 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kotoba.app/Kotoba";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
-				INFOPLIST_FILE = "KotobaTests/KotobaTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -747,15 +663,6 @@
 			buildConfigurations = (
 				53CB8E2A142E774300518E28 /* Debug */,
 				53CB8E2B142E774300518E28 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53CB8E2C142E774300518E28 /* Build configuration list for PBXNativeTarget "KotobaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53CB8E2D142E774300518E28 /* Debug */,
-				53CB8E2E142E774300518E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

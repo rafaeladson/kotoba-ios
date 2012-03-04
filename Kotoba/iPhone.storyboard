@@ -8,7 +8,7 @@
         <scene sceneID="nJ1-6O-6Kv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbf-se-SZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="pYC-Ue-ly5" customClass="QuestionGameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuestionGameController" id="pYC-Ue-ly5" customClass="QuestionGameController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PPH-kC-cNI">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -75,7 +75,7 @@
                     <navigationItem key="navigationItem" title="Question" id="tsh-A8-Ayn">
                         <barButtonItem key="rightBarButtonItem" title="Manage" id="80t-SP-TD8">
                             <connections>
-                                <segue destination="ZI3-nM-rcv" kind="push" id="5uK-U2-Rqc"/>
+                                <segue destination="ZI3-nM-rcv" kind="push" identifier="manageQuestions" id="5uK-U2-Rqc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -91,7 +91,7 @@
         <scene sceneID="Xna-vn-ad7">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VX3-MW-uDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="ZI3-nM-rcv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ListQuestionsController" id="ZI3-nM-rcv" customClass="ListQuestionsController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBy-Cu-caw">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -120,6 +120,10 @@
                                         </view>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZI3-nM-rcv" id="gaz-I2-fMZ"/>
+                                    <outlet property="delegate" destination="ZI3-nM-rcv" id="7Eu-nX-oaG"/>
+                                </connections>
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hgG-ub-qlf">
                                 <rect key="frame" x="0.0" y="372" width="320" height="44"/>
@@ -135,7 +139,7 @@
                     <navigationItem key="navigationItem" title="Manage" id="ccS-gS-vcx">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="J8z-Rr-Nch">
                             <connections>
-                                <segue destination="vBA-bI-tQ1" kind="push" id="gFl-Gy-9mD"/>
+                                <segue destination="vBA-bI-tQ1" kind="push" identifier="newQuestion" id="gFl-Gy-9mD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -146,7 +150,7 @@
         <scene sceneID="1ny-dX-CQG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLF-WW-jt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="vBA-bI-tQ1" customClass="QuestionEditViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EditQuestionController" id="vBA-bI-tQ1" userLabel="EditQuestionController" customClass="EditQuestionController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5D-el-QX2">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <subviews>
@@ -204,16 +208,19 @@
         </scene>
     </scenes>
     <classes>
-        <class className="QuestionEditViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionEditViewController.h"/>
+        <class className="EditQuestionController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditQuestionController.h"/>
             <relationships>
                 <relationship kind="action" name="onSaveAction:"/>
                 <relationship kind="outlet" name="answerTextView" candidateClass="UIPlaceHolderTextView"/>
                 <relationship kind="outlet" name="questionTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
-        <class className="QuestionGameViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionGameViewController.h"/>
+        <class className="ListQuestionsController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListQuestionsController.h"/>
+        </class>
+        <class className="QuestionGameController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionGameController.h"/>
             <relationships>
                 <relationship kind="action" name="nextQuestion:"/>
                 <relationship kind="action" name="showAnswer:"/>

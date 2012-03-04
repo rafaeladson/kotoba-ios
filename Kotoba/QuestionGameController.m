@@ -6,24 +6,28 @@
 //  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "QuestionGameViewController.h"
+#import "QuestionGameController.h"
 #import "AppDelegate.h"
 #import "OldQuestion.h"
 #import "CircularItemCursor.h"
+#import "DataManager.h"
+#import "ListQuestionsController.h"
 
 
 
-@interface QuestionGameViewController() 
+@interface QuestionGameController() 
 
 @property (strong, nonatomic) CircularItemCursor *cursor;
+@property (strong, nonatomic, readwrite) DataManager *dataManager;
 -(void) addSwipeLeftRecognizer;
+-(void) dataManagerReady:(NSNotification *)notification;
 
 @end
-@implementation QuestionGameViewController
+@implementation QuestionGameController
 @synthesize questionTextView;
 @synthesize answerTextView;
 @synthesize questionMarkLabel;
-@synthesize cursor = _cursor;
+@synthesize cursor = _cursor, dataManager = _dataManager;
 
 
 
@@ -48,23 +52,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(dataManagerReady:) name:DOCUMENT_READY object:self.dataManager];
     
-    [self addSwipeLeftRecognizer];
+    self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba"];
+    
+}
+
+-(void) dataManagerReady:(NSNotification *)notification {
     
     OldQuestion *question = [[OldQuestion alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
     NSArray *questions = [[NSArray alloc] initWithObjects:question , nil];
     
     self.cursor = [[CircularItemCursor alloc] initWithArray:questions];
+
     
-    delegate.rootViewController = self;
+    [self performSelectorOnMainThread:@selector(nextQuestion:) withObject:self waitUntilDone:YES];
     
-    [self nextQuestion:nil];
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    NSNotification *applicationStartedNotification = [NSNotification notificationWithName:@"APPLICATION_STARTED" object:self];
+    [notificationCenter postNotification:applicationStartedNotification];
     
 }
 
 - (void)viewDidUnload
 {
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center removeObserver:self];
     [self setQuestionTextView:nil];
     [self setAnswerTextView:nil];
     [self setQuestionMarkLabel:nil];
@@ -98,6 +112,14 @@
     questionMarkLabel.alpha = 1;
     answerTextView.alpha = 0;
     
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSString *segueIdentifier = [segue identifier];
+    if ( [@"manageQuestions" isEqualToString:segueIdentifier] ) {
+        ListQuestionsController *destinationController = [segue destinationViewController];
+        destinationController.dataManager = self.dataManager;
+    }
 }
 
 -(void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {

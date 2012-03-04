@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @class UIPlaceHolderTextView;
+@class DataManager;
+@class AlertHelper;
 
-@interface QuestionEditViewController : UIViewController
+@interface EditQuestionController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *questionTextField;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *answerTextView;
+@property (strong, nonatomic) DataManager *dataManager;
 - (IBAction)onSaveAction:(id)sender;
+-(void) mockAlertHelper:(AlertHelper *)alertHelper;
 
 @end

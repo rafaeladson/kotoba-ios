@@ -35,6 +35,8 @@
 		53C29EC91502FBF9007C9734 /* QuestionGameControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */; };
 		53C29ECA1502FE1A007C9734 /* QuestionGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameController.m */; };
 		53C29ECB1502FEBD007C9734 /* OldQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* OldQuestion.m */; };
+		53C29F361505AAFD007C9734 /* Intern.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C29F321505AAFD007C9734 /* Intern.strings */; };
+		53C29F371505AAFD007C9734 /* Alerts.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53C29F341505AAFD007C9734 /* Alerts.strings */; };
 		53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFC142E774300518E28 /* UIKit.framework */; };
 		53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8DFE142E774300518E28 /* Foundation.framework */; };
 		53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
@@ -94,6 +96,8 @@
 		53C29EC31502F3F7007C9734 /* ListQuestionsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListQuestionsController.h; sourceTree = "<group>"; };
 		53C29EC41502F3F7007C9734 /* ListQuestionsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListQuestionsController.m; sourceTree = "<group>"; };
 		53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameControllerTest.m; sourceTree = "<group>"; };
+		53C29F331505AAFD007C9734 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Intern.strings; sourceTree = "<group>"; };
+		53C29F351505AAFD007C9734 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Alerts.strings; sourceTree = "<group>"; };
 		53CB8DF8142E774300518E28 /* Kotoba.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kotoba.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CB8DFC142E774300518E28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		53CB8DFE142E774300518E28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -301,6 +305,8 @@
 		53D7E9CB15003ADA00D367EC /* en.lproj */ = {
 			isa = PBXGroup;
 			children = (
+				53C29F321505AAFD007C9734 /* Intern.strings */,
+				53C29F341505AAFD007C9734 /* Alerts.strings */,
 				53D7E9DC15003C4600D367EC /* UI.strings */,
 				53D7E9CC15003ADA00D367EC /* InfoPlist.strings */,
 				53D7E9CE15003ADA00D367EC /* Localizable.strings */,
@@ -395,6 +401,8 @@
 				53D7E9D015003ADA00D367EC /* InfoPlist.strings in Resources */,
 				53D7E9D115003ADA00D367EC /* Localizable.strings in Resources */,
 				53D7E9DE15003C4600D367EC /* UI.strings in Resources */,
+				53C29F361505AAFD007C9734 /* Intern.strings in Resources */,
+				53C29F371505AAFD007C9734 /* Alerts.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +467,22 @@
 				53B12A7614E76716005762A0 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		53C29F321505AAFD007C9734 /* Intern.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C29F331505AAFD007C9734 /* en */,
+			);
+			name = Intern.strings;
+			sourceTree = "<group>";
+		};
+		53C29F341505AAFD007C9734 /* Alerts.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C29F351505AAFD007C9734 /* en */,
+			);
+			name = Alerts.strings;
 			sourceTree = "<group>";
 		};
 		53CB8E05142E774300518E28 /* InfoPlist.strings */ = {

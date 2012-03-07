@@ -10,7 +10,7 @@
 #import "BaseTableViewController.h"
 @class DataManager;
 
-@interface ListQuestionsController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@interface ListQuestionsController : BaseTableViewController
 
 @property (strong, nonatomic) DataManager *dataManager;
 

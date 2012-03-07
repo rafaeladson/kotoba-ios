@@ -9,10 +9,25 @@
 #import "ListQuestionsController.h"
 #import "DataManager.h"
 #import "EditQuestionController.h"
+#import "PreConditions.h"
+#import "Question.h"
 
 @implementation ListQuestionsController
 
 @synthesize dataManager = _dataManager;
+
+
+-(void) setDataManager:(DataManager *)dataManager {
+    [PreConditions checkNotNil:dataManager];
+    _dataManager = dataManager;
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Question"];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"value" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    request.sortDescriptors = sortDescriptors;
+    
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.dataManager.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -58,8 +73,24 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) ||
+    (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    static NSString *CellIdentifier = @"QuestionCell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
+    Question *currentQuestion = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = currentQuestion.value;
+    
+    return cell;
+}
+
 
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSString *segueIdentifier = [segue identifier];
@@ -70,26 +101,6 @@
         [NSException raise:NSInvalidArgumentException format:@"Unsupported segue with identifier: %@", segueIdentifier];
     }
 }
-
--(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
-
--(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-    }
-    
-    return cell;
-}
-
 
 
 @end

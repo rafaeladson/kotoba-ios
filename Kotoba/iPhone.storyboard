@@ -75,7 +75,7 @@
                     <navigationItem key="navigationItem" title="Question" id="tsh-A8-Ayn">
                         <barButtonItem key="rightBarButtonItem" title="Manage" id="80t-SP-TD8">
                             <connections>
-                                <segue destination="ZI3-nM-rcv" kind="push" identifier="manageQuestions" id="5uK-U2-Rqc"/>
+                                <segue destination="uLN-Mh-P1E" kind="push" identifier="manageQuestions" id="5VX-xo-ztK"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -88,64 +88,40 @@
             </objects>
             <point key="canvasLocation" x="679" y="167"/>
         </scene>
-        <scene sceneID="Xna-vn-ad7">
+        <scene sceneID="LeN-wu-oM1">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VX3-MW-uDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="ListQuestionsController" id="ZI3-nM-rcv" customClass="ListQuestionsController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JBy-Cu-caw">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SrD-OE-lpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="ListQuestionsController" id="uLN-Mh-P1E" customClass="ListQuestionsController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8pS-ex-Pwt">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="sQt-Ii-bdU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionListCell" textLabel="Nef-UE-Wxu" style="IBUITableViewCellStyleDefault" id="h8s-wG-yFh">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nef-UE-Wxu">
-                                                    <rect key="frame" x="10" y="0.0" width="280" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="ZI3-nM-rcv" id="gaz-I2-fMZ"/>
-                                    <outlet property="delegate" destination="ZI3-nM-rcv" id="7Eu-nX-oaG"/>
-                                </connections>
-                            </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hgG-ub-qlf">
-                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="edit" id="obo-NF-lo2"/>
-                                </items>
-                                <color key="tintColor" red="0.180392161" green="0.54509806630000002" blue="0.34117648010000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Manage" id="ccS-gS-vcx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="J8z-Rr-Nch">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="J4c-zr-yfR">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uLN-Mh-P1E" id="L9O-0N-G8Y"/>
+                            <outlet property="delegate" destination="uLN-Mh-P1E" id="FhQ-yM-rSp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Manage" id="ElA-ul-yS7">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="YfK-ZV-awD">
                             <connections>
-                                <segue destination="vBA-bI-tQ1" kind="push" identifier="newQuestion" id="gFl-Gy-9mD"/>
+                                <segue destination="vBA-bI-tQ1" kind="push" identifier="newQuestion" id="ITb-Em-pXH"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </viewController>
+                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1131" y="172"/>
+            <point key="canvasLocation" x="1138" y="167"/>
         </scene>
         <scene sceneID="1ny-dX-CQG">
             <objects>
@@ -205,6 +181,9 @@
         </scene>
     </scenes>
     <classes>
+        <class className="BaseTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BaseTableViewController.h"/>
+        </class>
         <class className="EditQuestionController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditQuestionController.h"/>
             <relationships>
@@ -213,7 +192,7 @@
                 <relationship kind="outlet" name="questionTextField" candidateClass="UITextField"/>
             </relationships>
         </class>
-        <class className="ListQuestionsController" superclassName="UIViewController">
+        <class className="ListQuestionsController" superclassName="BaseTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListQuestionsController.h"/>
         </class>
         <class className="QuestionGameController" superclassName="UIViewController">

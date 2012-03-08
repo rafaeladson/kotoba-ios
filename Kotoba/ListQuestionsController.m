@@ -26,6 +26,7 @@
     request.sortDescriptors = sortDescriptors;
     
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.dataManager.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+
     
 }
 
@@ -74,7 +75,7 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) ||
-    (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+    (interfaceOrientation == UIInterfaceOrientationLandscapeRight) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -101,6 +102,7 @@
         [NSException raise:NSInvalidArgumentException format:@"Unsupported segue with identifier: %@", segueIdentifier];
     }
 }
+
 
 
 @end

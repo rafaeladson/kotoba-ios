@@ -92,7 +92,7 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait) || (interfaceOrientation == UIInterfaceOrientationLandscapeLeft) ||
-        (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
+        (interfaceOrientation == UIInterfaceOrientationLandscapeRight) || (interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
 }
 
 - (IBAction)showAnswer:(id)sender {

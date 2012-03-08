@@ -26,7 +26,6 @@
 		53C29EAC1501C396007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
 		53C29EAD1501C396007C9734 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA71501C396007C9734 /* libInternIOS.a */; };
 		53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
-		53C29EAF1501C3A6007C9734 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA71501C396007C9734 /* libInternIOS.a */; };
 		53C29EB01501C77A007C9734 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
 		53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EB21502AEF7007C9734 /* libOCMock.a */; };
 		53C29EBC1502B741007C9734 /* ListQuestionsControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */; };
@@ -73,7 +72,6 @@
 		53B12A7614E76716005762A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		53B12A7814E76716005762A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53B12A7A14E76716005762A0 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
-		53B12A8A14E76902005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = "../gh-unit/GHUnitIOS.framework"; sourceTree = "<group>"; };
 		53B12A9214E838BD005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = lib/GHUnitIOS.framework; sourceTree = "<group>"; };
 		53C29EA21501C396007C9734 /* AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelper.h; sourceTree = "<group>"; };
 		53C29EA31501C396007C9734 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 				53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */,
 				53CBAFC415018F9500728A7D /* libInternIOSTest.a in Frameworks */,
 				53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */,
-				53C29EAF1501C3A6007C9734 /* libInternIOS.a in Frameworks */,
 				53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,14 +209,9 @@
 		53CB8DED142E774300518E28 = {
 			isa = PBXGroup;
 			children = (
-				53C29EB11502AEF7007C9734 /* OCMock */,
-				53C29EA11501C396007C9734 /* InternIOS */,
-				53CBAFC015018F9500728A7D /* InternIOSTest */,
 				53543B8614F715C700326078 /* ic_launcher.png */,
 				53543B8414F7159800326078 /* web_114x114.png */,
 				53543B8214F7158100326078 /* web_57x57.png */,
-				53B12A9214E838BD005762A0 /* GHUnitIOS.framework */,
-				53B12A8A14E76902005762A0 /* GHUnitIOS.framework */,
 				53CB8E02142E774300518E28 /* Kotoba */,
 				53B12A7214E76716005762A0 /* UnitTests */,
 				53CB8DFB142E774300518E28 /* Frameworks */,
@@ -239,6 +231,10 @@
 		53CB8DFB142E774300518E28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53C29EB11502AEF7007C9734 /* OCMock */,
+				53C29EA11501C396007C9734 /* InternIOS */,
+				53CBAFC015018F9500728A7D /* InternIOSTest */,
+				53B12A9214E838BD005762A0 /* GHUnitIOS.framework */,
 				53CB8DFC142E774300518E28 /* UIKit.framework */,
 				53CB8DFE142E774300518E28 /* Foundation.framework */,
 				53CB8E00142E774300518E28 /* CoreData.framework */,

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pao-JL-oDr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="pao-JL-oDr">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
+        <!--Question Game Controller - Question-->
         <scene sceneID="Gwz-zH-4nE">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uAm-N7-9mL" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -15,7 +17,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="How do I use Kotoba?" id="ZcM-kY-Vz9">
                                 <rect key="frame" x="20" y="76" width="728" height="54"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.0003316560913" green="0.1603555485" blue="0.00051457092640000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
@@ -31,7 +33,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9e6-Hm-r6S">
                                 <rect key="frame" x="20" y="903" width="352" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="0.180392161" green="0.54509806630000002" blue="0.34117648010000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Next Question">
@@ -47,7 +49,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kIt-Ek-Yqy">
                                 <rect key="frame" x="392" y="903" width="356" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="tintColor" red="0.180392161" green="0.54509806630000002" blue="0.34117648010000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Show Answer">
@@ -61,9 +63,9 @@
                                     <action selector="showAnswer:" destination="Oje-wh-mgE" eventType="touchUpInside" id="MKL-j8-8nY"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="?" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" minimumFontSize="10" id="haL-To-sLB">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="?" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" adjustsFontSizeToFit="NO" id="haL-To-sLB">
                                 <rect key="frame" x="20" y="182" width="728" height="713"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="300"/>
                                 <color key="textColor" red="0.0003316560913" green="0.1603555485" blue="0.00051457092640000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -86,6 +88,7 @@
             </objects>
             <point key="canvasLocation" x="376" y="-784"/>
         </scene>
+        <!--List Questions Controller - Manage Questions-->
         <scene sceneID="kdd-yT-x3e">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeS-dp-RW1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -121,6 +124,7 @@
             </objects>
             <point key="canvasLocation" x="1322" y="-784"/>
         </scene>
+        <!--Edit Question Controller - Edit Question-->
         <scene sceneID="iw0-bQ-KoY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H2B-qq-vWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,6 +164,7 @@
             </objects>
             <point key="canvasLocation" x="2280" y="-784"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="LEd-9j-mGY">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CIF-lU-srK" userLabel="First Responder" sceneMemberID="firstResponder"/>

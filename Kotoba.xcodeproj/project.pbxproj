@@ -354,7 +354,7 @@
 		53CB8DEF142E774300518E28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 53CB8DF2142E774300518E28 /* Build configuration list for PBXProject "Kotoba" */;
 			compatibilityVersion = "Xcode 3.2";

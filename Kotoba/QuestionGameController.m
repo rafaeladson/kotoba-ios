@@ -27,7 +27,7 @@
 @synthesize questionTextView;
 @synthesize answerTextView;
 @synthesize questionMarkLabel;
-@synthesize cursor = _cursor, dataManager = _dataManager;
+@synthesize cursor = _cursor, dataManager = _dataManager, manageQuestionsButton = _manageQuestionsButton;
 
 
 
@@ -52,6 +52,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self.manageQuestionsButton setEnabled:false];
     NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
     [center addObserver:self selector:@selector(dataManagerReady:) name:DOCUMENT_READY object:self.dataManager];
     
@@ -72,6 +73,8 @@
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     NSNotification *applicationStartedNotification = [NSNotification notificationWithName:@"APPLICATION_STARTED" object:self];
     [notificationCenter postNotification:applicationStartedNotification];
+    
+    [self.manageQuestionsButton setEnabled:true];
     
 }
 

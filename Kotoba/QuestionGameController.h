@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *questionTextView;
 @property (strong, nonatomic) IBOutlet UITextView *answerTextView;
 @property (strong, nonatomic) IBOutlet UILabel *questionMarkLabel;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *manageQuestionsButton;
 - (IBAction)showAnswer:(id)sender;
 - (IBAction)nextQuestion:(id)sender;
 @property (strong, nonatomic, readonly) DataManager *dataManager;

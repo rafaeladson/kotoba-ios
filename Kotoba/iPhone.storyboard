@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Xl7-nC-7UW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Xl7-nC-7UW">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1179"/>
     </dependencies>
     <scenes>
+        <!--Question Game Controller - Question-->
         <scene sceneID="nJ1-6O-6Kv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbf-se-SZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -81,6 +83,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answerTextView" destination="kOm-xt-u8s" id="hQ8-bX-HdV"/>
+                        <outlet property="manageQuestionsButton" destination="80t-SP-TD8" id="sar-ja-tXq"/>
                         <outlet property="questionMarkLabel" destination="Vwv-ep-mhm" id="YBL-ON-qWK"/>
                         <outlet property="questionTextView" destination="Wgh-c1-GbN" id="r5J-Mp-E0f"/>
                     </connections>
@@ -88,6 +91,7 @@
             </objects>
             <point key="canvasLocation" x="679" y="167"/>
         </scene>
+        <!--List Questions Controller - Manage-->
         <scene sceneID="LeN-wu-oM1">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SrD-OE-lpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,6 +127,7 @@
             </objects>
             <point key="canvasLocation" x="1138" y="167"/>
         </scene>
+        <!--EditQuestionController-->
         <scene sceneID="1ny-dX-CQG">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLF-WW-jt8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,6 +166,7 @@
             </objects>
             <point key="canvasLocation" x="1590" y="172"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="OxH-9j-YyE">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQi-uq-4E9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -201,6 +207,7 @@
                 <relationship kind="action" name="nextQuestion:"/>
                 <relationship kind="action" name="showAnswer:"/>
                 <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="manageQuestionsButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="questionMarkLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="questionTextView" candidateClass="UITextView"/>
             </relationships>

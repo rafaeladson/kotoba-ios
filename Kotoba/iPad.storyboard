@@ -82,6 +82,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="answerTextView" destination="1wX-5M-uHE" id="PL2-2H-4i7"/>
+                        <outlet property="manageQuestionsButton" destination="KZe-Yn-GCQ" id="ycl-82-3tB"/>
                         <outlet property="questionMarkLabel" destination="haL-To-sLB" id="eNG-XE-0HM"/>
                     </connections>
                 </viewController>
@@ -205,6 +206,7 @@
                 <relationship kind="action" name="nextQuestion:"/>
                 <relationship kind="action" name="showAnswer:"/>
                 <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="manageQuestionsButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="questionMarkLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="questionTextView" candidateClass="UITextView"/>
             </relationships>

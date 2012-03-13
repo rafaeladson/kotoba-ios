@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> {
-    UIViewController *rootViewController;
+
 }
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (readwrite, strong, nonatomic) UIViewController *rootViewController;
 
 - (NSURL *)applicationDocumentsDirectory;
 

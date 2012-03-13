@@ -22,6 +22,6 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *manageQuestionsButton;
 - (IBAction)showAnswer:(id)sender;
 - (IBAction)nextQuestion:(id)sender;
-@property (strong, nonatomic, readonly) DataManager *dataManager;
+@property (strong, nonatomic) DataManager *dataManager;
 
 @end

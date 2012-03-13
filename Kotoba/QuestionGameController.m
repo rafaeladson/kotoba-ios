@@ -18,7 +18,7 @@
 @interface QuestionGameController() 
 
 @property (strong, nonatomic) CircularItemCursor *cursor;
-@property (strong, nonatomic, readwrite) DataManager *dataManager;
+
 -(void) addSwipeLeftRecognizer;
 -(void) dataManagerReady:(NSNotification *)notification;
 
@@ -53,10 +53,14 @@
 {
     [super viewDidLoad];
     [self.manageQuestionsButton setEnabled:false];
-    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-    [center addObserver:self selector:@selector(dataManagerReady:) name:DOCUMENT_READY object:self.dataManager];
+    if ( self.dataManager == nil ) {
+        NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+        [center addObserver:self selector:@selector(dataManagerReady:) name:DOCUMENT_READY object:self.dataManager];
+        self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba"];
+    } else {
+        [self dataManagerReady:nil];
+    }
     
-    self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba"];
     
 }
 

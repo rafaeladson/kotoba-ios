@@ -10,14 +10,13 @@
 #import <GHUnitIOS/GHUnit.h>
 #import "QuestionGameController.h"
 #import "ListQuestionsController.h"
+#import "DataManagerBaseTest.h"
 
 
-@interface QuestionGameControllerTest : GHAsyncTestCase
+@interface QuestionGameControllerTest : DataManagerBaseTest
 
 @property(strong, nonatomic) QuestionGameController *controller;
 @property(strong, nonatomic) UIStoryboard *storyboard;
-
--(void) applicationStarted:(NSNotification *)notification;
 
 @end
 
@@ -26,23 +25,19 @@
 @synthesize controller = _controller, storyboard = _storyboard;
 
 
+-(void) setUpClass {
+    [self startWithDatabaseName:@"question_game_controller_test"];
+}
+
 -(void) setUp {
     self.storyboard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
     self.controller = [self.storyboard instantiateViewControllerWithIdentifier:@"QuestionGameController"];
     
-    [self prepare];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationStarted:) name:@"APPLICATION_STARTED" object:self.controller];
+    self.controller.dataManager = self.dataManager;
     [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
     [self.controller viewDidLoad ];
     
-    [self waitForStatus:kGHUnitWaitStatusSuccess timeout:10.0];
 }
-
-
--(void) applicationStarted:(NSNotification *)notification {
-    [self notify:kGHUnitWaitStatusSuccess forSelector:nil];
-}
-
 
 -(void)testAnswerShouldOnlyAppearWhenUserWantsToSeeIt  {
     GHAssertNotNil(self.controller, @"Setup did not run");

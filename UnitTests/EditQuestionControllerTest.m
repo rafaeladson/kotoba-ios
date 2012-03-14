@@ -12,7 +12,7 @@
 #import "EditQuestionController.h"
 #import "UIPlaceHolderTextView.h"
 #import "ViewHelper.h"
-#import "Question.h"
+#import "QuestionDAO.h"
 #import "DataManager.h"
 #import "OCMockObject.h"
 #import "AlertHelper.h"
@@ -21,22 +21,22 @@
 
 @property (nonatomic, strong) EditQuestionController *controller;
 @property (nonatomic, strong) ViewHelper *viewHelper;
+@property (nonatomic, strong) QuestionDAO *dao;
 
 @end
 
 
 @implementation EditQuestionControllerTest
 
-@synthesize controller = _controller, viewHelper = _viewHelper;
+@synthesize controller = _controller, viewHelper = _viewHelper, dao = _dao;
 
 -(void) setUpClass {
     [self startWithDatabaseName:@"test_question_edit_view_controller"];
+    self.viewHelper = [[ViewHelper alloc] init];
+    self.dao = [[QuestionDAO alloc] init];
 }
 
 -(void) setUp {
-    
-    self.viewHelper = [[ViewHelper alloc] init];
-    
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"iPhone" bundle:nil];
     self.controller = [storyBoard instantiateViewControllerWithIdentifier:@"EditQuestionController"];
     [self.controller performSelectorOnMainThread:@selector(loadView) withObject:nil waitUntilDone:YES];
@@ -68,9 +68,7 @@
 }
 
 -(void) testSaveQuestionOnEdit {
-    Question *existingQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:self.dataManager.managedObjectContext];
-    existingQuestion.value = @"foo";
-    existingQuestion.answer = @"bar";
+    Question *existingQuestion = [self.dao createNewQuestionWithValue:@"foo" andAnswer:@"bar" inManagedObjectContext:self.dataManager.managedObjectContext];
     
     self.controller.dataManager = self.dataManager;
     self.controller.currentQuestion = existingQuestion;

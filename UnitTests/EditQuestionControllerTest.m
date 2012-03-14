@@ -22,8 +22,6 @@
 @property (nonatomic, strong) EditQuestionController *controller;
 @property (nonatomic, strong) ViewHelper *viewHelper;
 
--(NSArray *) getAllQuestionsOnDatabase;
-
 @end
 
 
@@ -61,14 +59,12 @@
     [self.viewHelper typeText:@"bar" onTextView:self.controller.answerTextView];
     [self.controller onSaveAction:nil];
     
-    NSArray *questions = [self getAllQuestionsOnDatabase];
+    NSArray *questions = [self getAllInstancesOfEntity:@"Question"];
     GHAssertTrue([questions count] == 1, @"%d == 1", [questions count]);
     
     Question *questionFromDb = [questions objectAtIndex:0];
     GHAssertEqualStrings(@"foo", questionFromDb.value, nil);
     GHAssertEqualStrings(@"bar", questionFromDb.answer, nil);
-                                 
-    [self.dataManager.managedObjectContext deleteObject:questionFromDb];
 }
 
 -(void) testSaveQuestionOnEdit {
@@ -86,7 +82,7 @@
     GHAssertEqualStrings(@"What's the color of milk?", existingQuestion.value, nil);
     GHAssertEqualStrings(@"White", existingQuestion.answer, nil);
     
-    NSArray *questions = [self getAllQuestionsOnDatabase];
+    NSArray *questions = [self getAllInstancesOfEntity:@"Question"];
     int numberOfQuestions = [questions count];
     GHAssertEquals(1, numberOfQuestions, nil);
 }
@@ -103,18 +99,10 @@
     
     [mockedHelper verify];
     
-    NSArray *questions = [self getAllQuestionsOnDatabase];
+    NSArray *questions = [self getAllInstancesOfEntity:@"Question"];
     GHAssertTrue([questions count] == 0, @"No questions should have been saved. Found: %d", [questions count]);
 }
 
-- (NSArray *)getAllQuestionsOnDatabase {
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Question"];
-    NSError *error = nil;
-    NSArray *questions = [self.dataManager.managedObjectContext executeFetchRequest:request error:&error];
-    GHAssertNil(error, nil);
-    
-    return questions;
-}
 
 -(void) tearDown {
     [self deleteInstancesWithEntityName:@"Question"];

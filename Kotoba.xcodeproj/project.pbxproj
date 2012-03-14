@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		532F7A5615004CC70013BD3A /* EditQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* EditQuestionController.m */; };
 		532F7A5715004CC70013BD3A /* EditQuestionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 532F7A5515004CC70013BD3A /* EditQuestionController.m */; };
+		53388F4C151044E4001A94CF /* QuestionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F4B151044E4001A94CF /* QuestionDAO.m */; };
+		53388F4D151044E4001A94CF /* QuestionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F4B151044E4001A94CF /* QuestionDAO.m */; };
+		53388F521510460D001A94CF /* QuestionDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F511510460D001A94CF /* QuestionDAOTest.m */; };
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
@@ -57,6 +60,9 @@
 /* Begin PBXFileReference section */
 		532F7A5415004CC70013BD3A /* EditQuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditQuestionController.h; sourceTree = "<group>"; };
 		532F7A5515004CC70013BD3A /* EditQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionController.m; sourceTree = "<group>"; };
+		53388F4A151044E4001A94CF /* QuestionDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDAO.h; sourceTree = "<group>"; };
+		53388F4B151044E4001A94CF /* QuestionDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDAO.m; sourceTree = "<group>"; };
+		53388F511510460D001A94CF /* QuestionDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDAOTest.m; sourceTree = "<group>"; };
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
@@ -151,13 +157,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53388F48151044CB001A94CF /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				53D7E9C31500345200D367EC /* Question.h */,
+				53D7E9C41500345200D367EC /* Question.m */,
+				53388F4A151044E4001A94CF /* QuestionDAO.h */,
+				53388F4B151044E4001A94CF /* QuestionDAO.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
+		53388F4E151045F0001A94CF /* question */ = {
+			isa = PBXGroup;
+			children = (
+				53388F4F151045F7001A94CF /* domain */,
+				53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */,
+				53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */,
+				53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */,
+			);
+			name = question;
+			sourceTree = "<group>";
+		};
+		53388F4F151045F7001A94CF /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				53388F511510460D001A94CF /* QuestionDAOTest.m */,
+			);
+			name = domain;
+			sourceTree = "<group>";
+		};
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
 				53B12A7314E76716005762A0 /* Supporting Files */,
-				53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */,
-				53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */,
-				53C29EC81502FBF9007C9734 /* QuestionGameControllerTest.m */,
+				53388F4E151045F0001A94CF /* question */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -286,8 +320,7 @@
 		53D7E9C015002B5F00D367EC /* question */ = {
 			isa = PBXGroup;
 			children = (
-				53D7E9C31500345200D367EC /* Question.h */,
-				53D7E9C41500345200D367EC /* Question.m */,
+				53388F48151044CB001A94CF /* domain */,
 				53A5926F142E799100C4CE55 /* QuestionGameController.h */,
 				53A59270142E799100C4CE55 /* QuestionGameController.m */,
 				532F7A5415004CC70013BD3A /* EditQuestionController.h */,
@@ -436,6 +469,8 @@
 				53C29EC91502FBF9007C9734 /* QuestionGameControllerTest.m in Sources */,
 				53C29ECA1502FE1A007C9734 /* QuestionGameController.m in Sources */,
 				53C29ECB1502FEBD007C9734 /* OldQuestion.m in Sources */,
+				53388F4D151044E4001A94CF /* QuestionDAO.m in Sources */,
+				53388F521510460D001A94CF /* QuestionDAOTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +486,7 @@
 				53D7E9C51500345300D367EC /* Question.m in Sources */,
 				532F7A5615004CC70013BD3A /* EditQuestionController.m in Sources */,
 				53C29EC51502F3F7007C9734 /* ListQuestionsController.m in Sources */,
+				53388F4C151044E4001A94CF /* QuestionDAO.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

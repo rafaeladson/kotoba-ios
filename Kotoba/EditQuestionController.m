@@ -9,13 +9,14 @@
 #import "EditQuestionController.h"
 #import "UIPlaceHolderTextView.h"
 #import "DataManager.h"
-#import "Question.h"
+#import "QuestionDAO.h"
 #import "AlertHelper.h"
 
 @interface EditQuestionController() 
 
 @property (strong, nonatomic) AlertHelper *alertHelper;
 @property int noKeyboardAnswerTextViewHeight;
+@property (strong, nonatomic) QuestionDAO *questionDAO;
 
 -(void) keyboardDidShow: (NSNotification *)notif;
 -(void) keyboardDidHide: (NSNotification *)notif;
@@ -26,12 +27,13 @@
 
 @synthesize questionTextField;
 @synthesize answerTextView;
-@synthesize dataManager = _dataManager, alertHelper = _alertHelper, currentQuestion = _currentQuestion;
+@synthesize dataManager = _dataManager, questionDAO = _questionDAO, alertHelper = _alertHelper, currentQuestion = _currentQuestion;
 @synthesize noKeyboardAnswerTextViewHeight = _noKeyboardAnswerTextViewHeight;
 
 
 - (void)viewDidLoad
 {
+    self.questionDAO = [[QuestionDAO alloc] init];
     self.alertHelper = [[AlertHelper alloc] init];
     self.answerTextView.placeholder = NSLocalizedStringFromTable(@"Please type your answer here", @"UI", nil);
 
@@ -50,7 +52,7 @@
     
     // unregister for keyboard notifications while not visible.
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-
+    self.questionDAO = nil;
     self.alertHelper = nil;
     [self setAnswerTextView:nil];
     [self setQuestionTextField:nil];
@@ -67,16 +69,21 @@
 
 - (IBAction)onSaveAction:(id)sender {
     NSString *valueText = self.questionTextField.text;
+    NSString *answerText = self.answerTextView.text;
+    
     if ( [valueText length] > 0 )  {
-        
-        if ( self.currentQuestion == nil ) {
-            self.currentQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:self.dataManager.managedObjectContext];
+        BOOL newQuestion = self.currentQuestion == nil;
+    
+        if ( newQuestion ) {
+            self.currentQuestion = [self.questionDAO createNewQuestionWithValue:valueText andAnswer:answerText inManagedObjectContext:self.dataManager.managedObjectContext];
+        } else {
+            self.currentQuestion.value = valueText;
+            self.currentQuestion.answer = self.answerTextView.text;
         }
         
-        self.currentQuestion.value = valueText;
-        self.currentQuestion.answer = self.answerTextView.text;
         NSLog(@"User saved question %@ with answer %@", self.currentQuestion.value, self.currentQuestion.answer);
         [self.navigationController popViewControllerAnimated:YES];
+        
     } else {
         [self.alertHelper showAlertDialogWithMessage:NSLocalizedStringFromTable(@"Please type a question.", @"Alerts", nil)];
     }

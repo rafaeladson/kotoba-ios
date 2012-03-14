@@ -55,6 +55,23 @@
     GHAssertEqualObjects(destinationController.dataManager, self.dataManager, nil);
 }
 
+-(void) testshouldPerformSegueForEditQuestion {
+    Question *question = [self.dao createNewQuestionWithValue:@"foo" andAnswer:@"bar" inManagedObjectContext:self.dataManager.managedObjectContext];
+    
+    self.controller.dataManager = self.dataManager;
+    EditQuestionController *destinationController = [self.storyboard instantiateViewControllerWithIdentifier:@"EditQuestionController"];
+    
+    int numberOfRowsInTable = [self.controller tableView:self.controller.tableView numberOfRowsInSection:0];
+    GHAssertEquals(1, numberOfRowsInTable, nil);
+    
+    
+    [self.controller.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:UITableViewScrollPositionTop];
+    UIStoryboardSegue *segue = [[UIStoryboardSegue alloc] initWithIdentifier:@"editQuestion" source:self.controller destination:destinationController];
+    [self.controller prepareForSegue:segue sender:nil];
+    GHAssertEqualObjects(destinationController.currentQuestion, question, nil);
+    
+}
+
 
 
 -(void) testShouldNotPerformInvalidSegue {

@@ -31,6 +31,7 @@
 @synthesize noKeyboardAnswerTextViewHeight = _noKeyboardAnswerTextViewHeight;
 
 
+
 - (void)viewDidLoad
 {
     self.questionDAO = [[QuestionDAO alloc] init];
@@ -40,9 +41,13 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (keyboardDidShow:)name: UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector (keyboardDidHide:) name: UIKeyboardDidHideNotification object:nil];
     
+    if ( self.currentQuestion != nil ) {
+        [self.questionTextField setText:self.currentQuestion.value];
+        [self.answerTextView setText:self.currentQuestion.answer];
+    }
+
+    
     [super viewDidLoad];
-    
-    
 }
 
 - (void)viewDidUnload

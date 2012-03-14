@@ -85,6 +85,15 @@
     GHAssertEquals(1, numberOfQuestions, nil);
 }
 
+-(void) testShouldUpdateFieldsOnQuestionEdit {
+    Question *existingQuestion = [self.dao createNewQuestionWithValue:@"foo" andAnswer:@"bar" inManagedObjectContext:self.dataManager.managedObjectContext];
+        
+    self.controller.currentQuestion = existingQuestion;
+    [self.controller performSelectorOnMainThread:@selector(viewDidLoad) withObject:nil waitUntilDone:YES];
+    GHAssertEqualStrings(@"foo", self.controller.questionTextField.text, nil);
+    GHAssertEqualStrings(@"bar", self.controller.answerTextView.text, nil);
+}
+
 -(void) testShouldShowAlertWhenQuestionFieldIsEmpty {
     self.controller.dataManager = self.dataManager;
     [self.viewHelper typeText:@"bar" onTextView:self.controller.answerTextView];

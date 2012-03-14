@@ -73,6 +73,11 @@
     if ( [@"newQuestion" isEqualToString:segueIdentifier] ) {
         EditQuestionController *destinationController = [segue destinationViewController];
         destinationController.dataManager = self.dataManager;
+    } else if ( [@"editQuestion" isEqualToString:segueIdentifier] ) {
+        EditQuestionController *destinationController = [segue destinationViewController];
+        NSIndexPath *selectedCellIndexPath = [self.tableView indexPathForSelectedRow];
+        Question *selectedQuestion = [self.fetchedResultsController objectAtIndexPath:selectedCellIndexPath];
+        destinationController.currentQuestion = selectedQuestion;
     } else {
         [NSException raise:NSInvalidArgumentException format:@"Unsupported segue with identifier: %@", segueIdentifier];
     }

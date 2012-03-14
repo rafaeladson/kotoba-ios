@@ -11,6 +11,15 @@
 @implementation QuestionDAO
 
 
+-(NSFetchRequest *) findAllFetchRequest {
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Question"];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"value" ascending:YES selector:@selector(caseInsensitiveCompare:)];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];
+    request.sortDescriptors = sortDescriptors;
+    
+    return request;
+}
+
 -(Question *)createNewQuestionWithValue:(NSString *)value andAnswer:(NSString *)answer inManagedObjectContext:(NSManagedObjectContext *)context {
     Question *newQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:context];
     newQuestion.value = value;
@@ -18,5 +27,6 @@
     
     return newQuestion;
 }
+
 
 @end

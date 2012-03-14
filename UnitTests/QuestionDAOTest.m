@@ -38,6 +38,33 @@
     GHAssertEqualObjects(question, [questions objectAtIndex:0], nil);
 }
 
+-(void) testFindAllFetchRequest {
+    [self.dao createNewQuestionWithValue:@"Avocato" andAnswer:@"" inManagedObjectContext:self.dataManager.managedObjectContext];
+    [self.dao createNewQuestionWithValue:@"Banana" andAnswer:@"" inManagedObjectContext:self.dataManager.managedObjectContext];
+    [self.dao createNewQuestionWithValue:@"blueberry" andAnswer:@"" inManagedObjectContext:self.dataManager.managedObjectContext];
+    [self.dao createNewQuestionWithValue:@"apple" andAnswer:@"" inManagedObjectContext:self.dataManager.managedObjectContext];
+    
+    NSFetchRequest *allQuestionsRequest = [self.dao findAllFetchRequest];
+    NSError *error = nil;
+    NSArray *questions = [self.dataManager.managedObjectContext executeFetchRequest:allQuestionsRequest error:&error];
+    GHAssertNil(error, nil);
+    
+    int numberOfQuestions = [questions count];
+    GHAssertEquals( 4, numberOfQuestions, nil);
+    
+    Question *firstQuestion = [questions objectAtIndex:0];
+    GHAssertEqualStrings(@"apple", firstQuestion.value , nil);
+    
+    Question *secondQuestion = [questions objectAtIndex:1];
+    GHAssertEqualStrings(@"Avocato", secondQuestion.value, nil);
+    
+    Question *thirdQuestion = [questions objectAtIndex:2];
+    GHAssertEqualStrings(@"Banana", thirdQuestion.value, nil);
+    
+    Question *forthQuestion = [questions objectAtIndex:3];
+    GHAssertEqualStrings(@"blueberry", forthQuestion.value, nil);
+}
+
 -(void) tearDown {
     [self deleteInstancesWithEntityName:@"Question"];
 }

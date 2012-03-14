@@ -11,6 +11,8 @@
 
 @interface QuestionDAO : NSObject
 
+-(NSFetchRequest *) findAllFetchRequest;
+
 -(Question *) createNewQuestionWithValue:(NSString *)value andAnswer:(NSString *)answer inManagedObjectContext:(NSManagedObjectContext *)context;
 
 @end

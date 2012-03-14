@@ -12,6 +12,11 @@
 		53388F4C151044E4001A94CF /* QuestionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F4B151044E4001A94CF /* QuestionDAO.m */; };
 		53388F4D151044E4001A94CF /* QuestionDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F4B151044E4001A94CF /* QuestionDAO.m */; };
 		53388F521510460D001A94CF /* QuestionDAOTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53388F511510460D001A94CF /* QuestionDAOTest.m */; };
+		5345EFB615106AB700509B94 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB015106AB700509B94 /* libInternIOS-simulator.a */; };
+		5345EFB715106AB700509B94 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB015106AB700509B94 /* libInternIOS-simulator.a */; };
+		5345EFB815106AB700509B94 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB115106AB700509B94 /* libInternIOS.a */; };
+		5345EFB915106AB700509B94 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB115106AB700509B94 /* libInternIOS.a */; };
+		5345EFBE15106ACA00509B94 /* libInternIOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFBC15106ACA00509B94 /* libInternIOSTest.a */; };
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
@@ -26,9 +31,6 @@
 		53B12A7914E76716005762A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B12A7814E76716005762A0 /* main.m */; };
 		53B12A9314E838BD005762A0 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A9214E838BD005762A0 /* GHUnitIOS.framework */; };
 		53C29E971501AF75007C9734 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
-		53C29EAC1501C396007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
-		53C29EAD1501C396007C9734 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA71501C396007C9734 /* libInternIOS.a */; };
-		53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EA61501C396007C9734 /* libInternIOS-simulator.a */; };
 		53C29EB01501C77A007C9734 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
 		53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C29EB21502AEF7007C9734 /* libOCMock.a */; };
 		53C29EBC1502B741007C9734 /* ListQuestionsControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C29EBB1502B741007C9734 /* ListQuestionsControllerTest.m */; };
@@ -47,7 +49,6 @@
 		53CB8E0D142E774300518E28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0C142E774300518E28 /* AppDelegate.m */; };
 		53CB8E10142E774300518E28 /* Kotoba.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */; };
 		53CBAFBE15018EFA00728A7D /* EditQuestionControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */; };
-		53CBAFC415018F9500728A7D /* libInternIOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CBAFC215018F9500728A7D /* libInternIOSTest.a */; };
 		53D7E9C115002F6800D367EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53B12A7014E76716005762A0 /* CoreGraphics.framework */; };
 		53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53CB8E00142E774300518E28 /* CoreData.framework */; };
 		53D7E9C51500345300D367EC /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D7E9C41500345200D367EC /* Question.m */; };
@@ -63,10 +64,23 @@
 		53388F4A151044E4001A94CF /* QuestionDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDAO.h; sourceTree = "<group>"; };
 		53388F4B151044E4001A94CF /* QuestionDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDAO.m; sourceTree = "<group>"; };
 		53388F511510460D001A94CF /* QuestionDAOTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionDAOTest.m; sourceTree = "<group>"; };
+		5345EFAB15106AB700509B94 /* AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelper.h; sourceTree = "<group>"; };
+		5345EFAC15106AB700509B94 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		5345EFAD15106AB700509B94 /* CircularItemCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularItemCursor.h; sourceTree = "<group>"; };
+		5345EFAE15106AB700509B94 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		5345EFAF15106AB700509B94 /* DataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManagerDelegate.h; sourceTree = "<group>"; };
+		5345EFB015106AB700509B94 /* libInternIOS-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInternIOS-simulator.a"; sourceTree = "<group>"; };
+		5345EFB115106AB700509B94 /* libInternIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOS.a; sourceTree = "<group>"; };
+		5345EFB215106AB700509B94 /* PreConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreConditions.h; sourceTree = "<group>"; };
+		5345EFB315106AB700509B94 /* RandomIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomIterator.h; sourceTree = "<group>"; };
+		5345EFB415106AB700509B94 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		5345EFB515106AB700509B94 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
+		5345EFBB15106ACA00509B94 /* DataManagerBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManagerBaseTest.h; sourceTree = "<group>"; };
+		5345EFBC15106ACA00509B94 /* libInternIOSTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOSTest.a; sourceTree = "<group>"; };
+		5345EFBD15106ACA00509B94 /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
-		535FEEE815105B4A00FBBEC6 /* DataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManagerDelegate.h; path = ../../../intern/InternIOS/DataManagerDelegate.h; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* OldQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldQuestion.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* OldQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldQuestion.m; sourceTree = "<group>"; };
 		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
@@ -80,16 +94,6 @@
 		53B12A7814E76716005762A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		53B12A7A14E76716005762A0 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		53B12A9214E838BD005762A0 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = lib/GHUnitIOS.framework; sourceTree = "<group>"; };
-		53C29EA21501C396007C9734 /* AlertHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertHelper.h; sourceTree = "<group>"; };
-		53C29EA31501C396007C9734 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
-		53C29EA41501C396007C9734 /* CircularItemCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularItemCursor.h; sourceTree = "<group>"; };
-		53C29EA51501C396007C9734 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
-		53C29EA61501C396007C9734 /* libInternIOS-simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInternIOS-simulator.a"; sourceTree = "<group>"; };
-		53C29EA71501C396007C9734 /* libInternIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOS.a; sourceTree = "<group>"; };
-		53C29EA81501C396007C9734 /* PreConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreConditions.h; sourceTree = "<group>"; };
-		53C29EA91501C396007C9734 /* RandomIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandomIterator.h; sourceTree = "<group>"; };
-		53C29EAA1501C396007C9734 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
-		53C29EAB1501C396007C9734 /* UIPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceHolderTextView.h; sourceTree = "<group>"; };
 		53C29EB21502AEF7007C9734 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		53C29EB31502AEF7007C9734 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		53C29EB41502AEF7007C9734 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -116,9 +120,6 @@
 		53CB8E0F142E774300518E28 /* Kotoba.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kotoba.xcdatamodel; sourceTree = "<group>"; };
 		53CB8E17142E774300518E28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		53CBAFBD15018EFA00728A7D /* EditQuestionControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionControllerTest.m; sourceTree = "<group>"; };
-		53CBAFC115018F9500728A7D /* DataManagerBaseTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManagerBaseTest.h; sourceTree = "<group>"; };
-		53CBAFC215018F9500728A7D /* libInternIOSTest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInternIOSTest.a; sourceTree = "<group>"; };
-		53CBAFC315018F9500728A7D /* ViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewHelper.h; sourceTree = "<group>"; };
 		53D7E9C31500345200D367EC /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
 		53D7E9C41500345200D367EC /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		53D7E9CD15003ADA00D367EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
@@ -136,9 +137,10 @@
 				53B12A6F14E76716005762A0 /* Foundation.framework in Frameworks */,
 				53B12A7114E76716005762A0 /* CoreGraphics.framework in Frameworks */,
 				53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */,
-				53CBAFC415018F9500728A7D /* libInternIOSTest.a in Frameworks */,
-				53C29EAE1501C3A2007C9734 /* libInternIOS-simulator.a in Frameworks */,
 				53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */,
+				5345EFB715106AB700509B94 /* libInternIOS-simulator.a in Frameworks */,
+				5345EFB915106AB700509B94 /* libInternIOS.a in Frameworks */,
+				5345EFBE15106ACA00509B94 /* libInternIOSTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,8 +152,8 @@
 				53CB8DFD142E774300518E28 /* UIKit.framework in Frameworks */,
 				53CB8DFF142E774300518E28 /* Foundation.framework in Frameworks */,
 				53CB8E01142E774300518E28 /* CoreData.framework in Frameworks */,
-				53C29EAC1501C396007C9734 /* libInternIOS-simulator.a in Frameworks */,
-				53C29EAD1501C396007C9734 /* libInternIOS.a in Frameworks */,
+				5345EFB615106AB700509B94 /* libInternIOS-simulator.a in Frameworks */,
+				5345EFB815106AB700509B94 /* libInternIOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +190,36 @@
 			name = domain;
 			sourceTree = "<group>";
 		};
+		5345EFAA15106AB700509B94 /* InternIOS */ = {
+			isa = PBXGroup;
+			children = (
+				5345EFAB15106AB700509B94 /* AlertHelper.h */,
+				5345EFAC15106AB700509B94 /* BaseTableViewController.h */,
+				5345EFAD15106AB700509B94 /* CircularItemCursor.h */,
+				5345EFAE15106AB700509B94 /* DataManager.h */,
+				5345EFAF15106AB700509B94 /* DataManagerDelegate.h */,
+				5345EFB015106AB700509B94 /* libInternIOS-simulator.a */,
+				5345EFB115106AB700509B94 /* libInternIOS.a */,
+				5345EFB215106AB700509B94 /* PreConditions.h */,
+				5345EFB315106AB700509B94 /* RandomIterator.h */,
+				5345EFB415106AB700509B94 /* Stack.h */,
+				5345EFB515106AB700509B94 /* UIPlaceHolderTextView.h */,
+			);
+			name = InternIOS;
+			path = lib/InternIOS;
+			sourceTree = "<group>";
+		};
+		5345EFBA15106ACA00509B94 /* InternIOSTest */ = {
+			isa = PBXGroup;
+			children = (
+				5345EFBB15106ACA00509B94 /* DataManagerBaseTest.h */,
+				5345EFBC15106ACA00509B94 /* libInternIOSTest.a */,
+				5345EFBD15106ACA00509B94 /* ViewHelper.h */,
+			);
+			name = InternIOSTest;
+			path = lib/InternIOSTest;
+			sourceTree = "<group>";
+		};
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,25 +238,6 @@
 				53B12A7A14E76716005762A0 /* UnitTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		53C29EA11501C396007C9734 /* InternIOS */ = {
-			isa = PBXGroup;
-			children = (
-				535FEEE815105B4A00FBBEC6 /* DataManagerDelegate.h */,
-				53C29EA21501C396007C9734 /* AlertHelper.h */,
-				53C29EA31501C396007C9734 /* BaseTableViewController.h */,
-				53C29EA41501C396007C9734 /* CircularItemCursor.h */,
-				53C29EA51501C396007C9734 /* DataManager.h */,
-				53C29EA61501C396007C9734 /* libInternIOS-simulator.a */,
-				53C29EA71501C396007C9734 /* libInternIOS.a */,
-				53C29EA81501C396007C9734 /* PreConditions.h */,
-				53C29EA91501C396007C9734 /* RandomIterator.h */,
-				53C29EAA1501C396007C9734 /* Stack.h */,
-				53C29EAB1501C396007C9734 /* UIPlaceHolderTextView.h */,
-			);
-			name = InternIOS;
-			path = lib/InternIOS;
 			sourceTree = "<group>";
 		};
 		53C29EB11502AEF7007C9734 /* OCMock */ = {
@@ -267,9 +280,9 @@
 		53CB8DFB142E774300518E28 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5345EFBA15106ACA00509B94 /* InternIOSTest */,
+				5345EFAA15106AB700509B94 /* InternIOS */,
 				53C29EB11502AEF7007C9734 /* OCMock */,
-				53C29EA11501C396007C9734 /* InternIOS */,
-				53CBAFC015018F9500728A7D /* InternIOSTest */,
 				53B12A9214E838BD005762A0 /* GHUnitIOS.framework */,
 				53CB8DFC142E774300518E28 /* UIKit.framework */,
 				53CB8DFE142E774300518E28 /* Foundation.framework */,
@@ -306,17 +319,6 @@
 				53CB8E0A142E774300518E28 /* Kotoba-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		53CBAFC015018F9500728A7D /* InternIOSTest */ = {
-			isa = PBXGroup;
-			children = (
-				53CBAFC115018F9500728A7D /* DataManagerBaseTest.h */,
-				53CBAFC215018F9500728A7D /* libInternIOSTest.a */,
-				53CBAFC315018F9500728A7D /* ViewHelper.h */,
-			);
-			name = InternIOSTest;
-			path = lib/InternIOSTest;
 			sourceTree = "<group>";
 		};
 		53D7E9C015002B5F00D367EC /* question */ = {

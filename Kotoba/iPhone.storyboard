@@ -82,10 +82,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="answerTextView" destination="kOm-xt-u8s" id="hQ8-bX-HdV"/>
+                        <outlet property="answerTextView" destination="kOm-xt-u8s" id="VdY-5o-C8z"/>
                         <outlet property="manageQuestionsButton" destination="80t-SP-TD8" id="sar-ja-tXq"/>
-                        <outlet property="questionMarkLabel" destination="Vwv-ep-mhm" id="YBL-ON-qWK"/>
-                        <outlet property="questionTextView" destination="Wgh-c1-GbN" id="r5J-Mp-E0f"/>
+                        <outlet property="questionMarkLabel" destination="Vwv-ep-mhm" id="4B7-5S-Plg"/>
+                        <outlet property="questionTextView" destination="Wgh-c1-GbN" id="cCg-Li-VNU"/>
                     </connections>
                 </viewController>
             </objects>
@@ -101,14 +101,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="J4c-zr-yfR">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCell" id="J4c-zr-yfR">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <connections>
+                                    <segue destination="vBA-bI-tQ1" kind="push" identifier="editQuestion" id="mxy-Pn-LYN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -221,4 +224,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="mxy-Pn-LYN"/>
+    </inferredMetricsTieBreakers>
 </document>

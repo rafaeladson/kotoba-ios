@@ -66,6 +66,7 @@
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		535FEEE815105B4A00FBBEC6 /* DataManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManagerDelegate.h; path = ../../../intern/InternIOS/DataManagerDelegate.h; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* OldQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldQuestion.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* OldQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldQuestion.m; sourceTree = "<group>"; };
 		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
@@ -210,6 +211,7 @@
 		53C29EA11501C396007C9734 /* InternIOS */ = {
 			isa = PBXGroup;
 			children = (
+				535FEEE815105B4A00FBBEC6 /* DataManagerDelegate.h */,
 				53C29EA21501C396007C9734 /* AlertHelper.h */,
 				53C29EA31501C396007C9734 /* BaseTableViewController.h */,
 				53C29EA41501C396007C9734 /* CircularItemCursor.h */,

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataManagerDelegate.h"
 @class DataManager;
 
-@interface QuestionGameController : UIViewController {
+@interface QuestionGameController : UIViewController <DataManagerDelegate> {
     UITextView *questionTextView;
     UITextView *answerTextView;
     UILabel *questMarkLabel;

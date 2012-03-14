@@ -20,7 +20,6 @@
 @property (strong, nonatomic) CircularItemCursor *cursor;
 
 -(void) addSwipeLeftRecognizer;
--(void) dataManagerReady:(NSNotification *)notification;
 
 @end
 @implementation QuestionGameController
@@ -52,32 +51,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self.manageQuestionsButton setEnabled:false];
     if ( self.dataManager == nil ) {
-        NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(dataManagerReady:) name:self.dataManager.documentReadyNotificationName  object:self.dataManager];
-        self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba"];
+        [self.manageQuestionsButton setEnabled:false];
+        self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba" andDelegate:self];
     } else {
-        [self dataManagerReady:nil];
+        [self documentDidLoad];
     }
     
     
 }
 
--(void) dataManagerReady:(NSNotification *)notification {
-    
-    OldQuestion *question = [[OldQuestion alloc] initWithValue:@"What's the meaning to life, the universe and everything else" andAnswer:@"42" ];
-    NSArray *questions = [[NSArray alloc] initWithObjects:question , nil];
-    
-    self.cursor = [[CircularItemCursor alloc] initWithArray:questions];
-
+-(void) documentDidLoad {
     
     [self performSelectorOnMainThread:@selector(nextQuestion:) withObject:self waitUntilDone:YES];
-    
-    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
-    NSNotification *applicationStartedNotification = [NSNotification notificationWithName:@"APPLICATION_STARTED" object:self];
-    [notificationCenter postNotification:applicationStartedNotification];
-    
     [self.manageQuestionsButton setEnabled:true];
     
 }
@@ -105,19 +91,18 @@
 - (IBAction)showAnswer:(id)sender {
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.5];
-    questionMarkLabel.alpha = 0;
-    answerTextView.alpha = 1;
+    self.questionMarkLabel.alpha = 0;
+    self.answerTextView.alpha = 1;
     [UIView commitAnimations];
 
 }
 
 - (IBAction)nextQuestion:(id)sender {
-    OldQuestion *question = self.cursor.currentItem;
-    questionTextView.text = question.value;
-    answerTextView.text = question.answer;
+    self.questionTextView.text = @"hello";
+    self.answerTextView.text = @"world";
     
-    questionMarkLabel.alpha = 1;
-    answerTextView.alpha = 0;
+    self.questionMarkLabel.alpha = 1;
+    self.answerTextView.alpha = 0;
     
 }
 

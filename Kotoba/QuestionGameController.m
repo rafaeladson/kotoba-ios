@@ -55,7 +55,7 @@
     [self.manageQuestionsButton setEnabled:false];
     if ( self.dataManager == nil ) {
         NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-        [center addObserver:self selector:@selector(dataManagerReady:) name:DOCUMENT_READY object:self.dataManager];
+        [center addObserver:self selector:@selector(dataManagerReady:) name:self.dataManager.documentReadyNotificationName  object:self.dataManager];
         self.dataManager = [[DataManager alloc] initWithDatabaseName:@"kotoba"];
     } else {
         [self dataManagerReady:nil];

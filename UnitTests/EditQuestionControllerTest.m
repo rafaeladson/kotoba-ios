@@ -61,11 +61,7 @@
     [self.viewHelper typeText:@"bar" onTextView:self.controller.answerTextView];
     [self.controller onSaveAction:nil];
     
-    
-    
     NSArray *questions = [self getAllQuestionsOnDatabase];
-    
-    
     GHAssertTrue([questions count] == 1, @"%d == 1", [questions count]);
     
     Question *questionFromDb = [questions objectAtIndex:0];
@@ -73,8 +69,26 @@
     GHAssertEqualStrings(@"bar", questionFromDb.answer, nil);
                                  
     [self.dataManager.managedObjectContext deleteObject:questionFromDb];
-                                  
+}
+
+-(void) testSaveQuestionOnEdit {
+    Question *existingQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:self.dataManager.managedObjectContext];
+    existingQuestion.value = @"foo";
+    existingQuestion.answer = @"bar";
     
+    self.controller.dataManager = self.dataManager;
+    self.controller.currentQuestion = existingQuestion;
+    
+    [self.viewHelper typeText:@"What's the color of milk?" onTextField:self.controller.questionTextField];
+    [self.viewHelper typeText:@"White" onTextView:self.controller.answerTextView];
+    [self.controller onSaveAction:nil];
+    
+    GHAssertEqualStrings(@"What's the color of milk?", existingQuestion.value, nil);
+    GHAssertEqualStrings(@"White", existingQuestion.answer, nil);
+    
+    NSArray *questions = [self getAllQuestionsOnDatabase];
+    int numberOfQuestions = [questions count];
+    GHAssertEquals(1, numberOfQuestions, nil);
 }
 
 -(void) testShouldShowAlertWhenQuestionFieldIsEmpty {
@@ -91,9 +105,6 @@
     
     NSArray *questions = [self getAllQuestionsOnDatabase];
     GHAssertTrue([questions count] == 0, @"No questions should have been saved. Found: %d", [questions count]);
-    
-    
-    
 }
 
 - (NSArray *)getAllQuestionsOnDatabase {
@@ -105,7 +116,8 @@
     return questions;
 }
 
-    
-
+-(void) tearDown {
+    [self deleteInstancesWithEntityName:@"Question"];
+}
 
 @end

@@ -26,7 +26,7 @@
 
 @synthesize questionTextField;
 @synthesize answerTextView;
-@synthesize dataManager = _dataManager, alertHelper = _alertHelper;
+@synthesize dataManager = _dataManager, alertHelper = _alertHelper, currentQuestion = _currentQuestion;
 @synthesize noKeyboardAnswerTextViewHeight = _noKeyboardAnswerTextViewHeight;
 
 
@@ -68,10 +68,14 @@
 - (IBAction)onSaveAction:(id)sender {
     NSString *valueText = self.questionTextField.text;
     if ( [valueText length] > 0 )  {
-        Question *newQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:self.dataManager.managedObjectContext];
-        newQuestion.value = valueText;
-        newQuestion.answer = self.answerTextView.text;
-        NSLog(@"Used saved new question with value %@ and answer %@", newQuestion.value, newQuestion.answer);
+        
+        if ( self.currentQuestion == nil ) {
+            self.currentQuestion = [NSEntityDescription insertNewObjectForEntityForName:@"Question" inManagedObjectContext:self.dataManager.managedObjectContext];
+        }
+        
+        self.currentQuestion.value = valueText;
+        self.currentQuestion.answer = self.answerTextView.text;
+        NSLog(@"User saved question %@ with answer %@", self.currentQuestion.value, self.currentQuestion.answer);
         [self.navigationController popViewControllerAnimated:YES];
     } else {
         [self.alertHelper showAlertDialogWithMessage:NSLocalizedStringFromTable(@"Please type a question.", @"Alerts", nil)];

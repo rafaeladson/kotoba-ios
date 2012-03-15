@@ -50,6 +50,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    [self.navigationController.toolbar setTintColor:self.navigationController.navigationBar.tintColor];
     [super viewDidLoad];
     if ( self.dataManager == nil ) {
         [self.manageQuestionsButton setEnabled:false];

@@ -12,6 +12,8 @@
 
 @interface ListQuestionsController : BaseTableViewController
 
-@property (strong, nonatomic) DataManager *dataManager;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+
 
 @end

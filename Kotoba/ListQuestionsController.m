@@ -14,12 +14,13 @@
 
 @implementation ListQuestionsController
 
-@synthesize dataManager = _dataManager;
+@synthesize addButton = _addButton;
+
 
 
 -(void) setDataManager:(DataManager *)dataManager {
     [PreConditions checkNotNil:dataManager];
-    _dataManager = dataManager;
+    [super setDataManager:dataManager];
     
     QuestionDAO *questionDAO = [[QuestionDAO alloc] init];
     NSFetchRequest *fetchAllQuestionsRequest = [questionDAO findAllFetchRequest];
@@ -38,9 +39,17 @@
 
 #pragma mark - View lifecycle
 
+-(void) viewDidAppear:(BOOL)animated {
+    self.navigationController.toolbarHidden = NO;
+}
+
+-(void) viewDidDisappear:(BOOL)animated {
+    self.navigationController.toolbarHidden = YES;
+}
 
 - (void)viewDidUnload
 {
+    [self setAddButton:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -83,6 +92,18 @@
     }
 }
 
+-(void) setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    if ( editing ) {
+        self.addButton.enabled = NO;
+    } else {
+        self.addButton.enabled = YES;
+    }
+}
+
+-(NSArray *) toolbarItems {
+    return [NSArray arrayWithObject:self.editButtonItem];
+}
 
 
 @end

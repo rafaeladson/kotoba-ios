@@ -124,6 +124,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="scL-l8-3wl" id="Nsj-Nh-BSw"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1322" y="-784"/>
@@ -202,6 +205,9 @@
         </class>
         <class className="ListQuestionsController" superclassName="BaseTableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ListQuestionsController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="addButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
         </class>
         <class className="QuestionGameController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionGameController.h"/>

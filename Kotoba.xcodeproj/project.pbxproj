@@ -15,7 +15,6 @@
 		5345EFB615106AB700509B94 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB015106AB700509B94 /* libInternIOS-simulator.a */; };
 		5345EFB715106AB700509B94 /* libInternIOS-simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB015106AB700509B94 /* libInternIOS-simulator.a */; };
 		5345EFB815106AB700509B94 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB115106AB700509B94 /* libInternIOS.a */; };
-		5345EFB915106AB700509B94 /* libInternIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFB115106AB700509B94 /* libInternIOS.a */; };
 		5345EFBE15106ACA00509B94 /* libInternIOSTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5345EFBC15106ACA00509B94 /* libInternIOSTest.a */; };
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
@@ -139,7 +138,6 @@
 				53D7E9C2150033B000D367EC /* CoreData.framework in Frameworks */,
 				53C29EB91502AEF8007C9734 /* libOCMock.a in Frameworks */,
 				5345EFB715106AB700509B94 /* libInternIOS-simulator.a in Frameworks */,
-				5345EFB915106AB700509B94 /* libInternIOS.a in Frameworks */,
 				5345EFBE15106ACA00509B94 /* libInternIOSTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,13 +294,13 @@
 		53CB8E02142E774300518E28 /* Kotoba */ = {
 			isa = PBXGroup;
 			children = (
+				53D7E9C015002B5F00D367EC /* question */,
 				53D7E9CB15003ADA00D367EC /* en.lproj */,
 				53CB8E0B142E774300518E28 /* AppDelegate.h */,
 				53CB8E0C142E774300518E28 /* AppDelegate.m */,
 				53CB8E0E142E774300518E28 /* Kotoba.xcdatamodeld */,
 				53CB8E03142E774300518E28 /* Supporting Files */,
 				53A59269142E787700C4CE55 /* iPhone.storyboard */,
-				53D7E9C015002B5F00D367EC /* question */,
 				53A59272142E7B6A00C4CE55 /* iPad.storyboard */,
 				537BC58F14E330F90083E0E4 /* OldQuestion.h */,
 				537BC59014E330F90083E0E4 /* OldQuestion.m */,

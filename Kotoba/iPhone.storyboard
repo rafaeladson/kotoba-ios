@@ -126,6 +126,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="YfK-ZV-awD" id="PtY-c0-vLR"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="1138" y="167"/>
@@ -189,36 +192,6 @@
             <point key="canvasLocation" x="153" y="167"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="BaseTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BaseTableViewController.h"/>
-        </class>
-        <class className="EditQuestionController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditQuestionController.h"/>
-            <relationships>
-                <relationship kind="action" name="onSaveAction:"/>
-                <relationship kind="outlet" name="answerTextView" candidateClass="UIPlaceHolderTextView"/>
-                <relationship kind="outlet" name="questionTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="ListQuestionsController" superclassName="BaseTableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ListQuestionsController.h"/>
-        </class>
-        <class className="QuestionGameController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/QuestionGameController.h"/>
-            <relationships>
-                <relationship kind="action" name="nextQuestion:"/>
-                <relationship kind="action" name="showAnswer:"/>
-                <relationship kind="outlet" name="answerTextView" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="manageQuestionsButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="questionMarkLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="questionTextView" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="UIPlaceHolderTextView" superclassName="UITextView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIPlaceHolderTextView.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

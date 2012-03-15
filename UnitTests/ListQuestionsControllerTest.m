@@ -112,6 +112,16 @@
     GHAssertEquals(0, numberOfRowsInTable, nil);
 }
 
+-(void) testShouldUpdateAddButtonEnabledWhenEditing {
+    [self.dao createNewQuestionWithValue:@"foo" andAnswer:@"bar" inManagedObjectContext:self.dataManager.managedObjectContext];
+    self.controller.dataManager = self.dataManager;
+    
+    [self.controller setEditing:YES animated:NO];
+    GHAssertFalse(self.controller.addButton.enabled, nil);
+    
+    [self.controller setEditing:NO animated:NO];
+    GHAssertTrue(self.controller.addButton.enabled, nil);
+}
 
 
 -(bool) cellAtRow:(int)row hasText:(NSString *)text {

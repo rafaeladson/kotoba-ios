@@ -11,6 +11,8 @@
 
 @interface QuestionDAO : NSObject
 
+-(NSArray *) findAllInManagedObjectContext:(NSManagedObjectContext *)context error:(NSError *__autoreleasing *)error;
+
 -(NSFetchRequest *) findAllFetchRequest;
 
 -(Question *) createNewQuestionWithValue:(NSString *)value andAnswer:(NSString *)answer inManagedObjectContext:(NSManagedObjectContext *)context;

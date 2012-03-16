@@ -8,25 +8,31 @@
 
 #import "QuestionGameController.h"
 #import "AppDelegate.h"
-#import "OldQuestion.h"
+#import "QuestionDAO.h"
 #import "CircularItemCursor.h"
 #import "DataManager.h"
 #import "ListQuestionsController.h"
+#import "AlertHelper.h"
 
 
 
 @interface QuestionGameController() 
 
 @property (strong, nonatomic) CircularItemCursor *cursor;
+@property (strong, nonatomic) QuestionDAO *questionDAO;
+@property BOOL documentReady;
 
+-(void) reloadCursor;
 -(void) addSwipeLeftRecognizer;
+-(void) restoreDefaultTextViewValues;
 
 @end
 @implementation QuestionGameController
 @synthesize questionTextView;
 @synthesize answerTextView;
 @synthesize questionMarkLabel;
-@synthesize cursor = _cursor, dataManager = _dataManager, manageQuestionsButton = _manageQuestionsButton;
+@synthesize cursor = _cursor, dataManager = _dataManager, manageQuestionsButton = _manageQuestionsButton,
+    questionDAO = _questionDAO, documentReady = _documentReady;
 
 
 
@@ -50,6 +56,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    self.questionDAO = [[QuestionDAO alloc] init];
+    self.documentReady = NO;
     [self.navigationController.toolbar setTintColor:self.navigationController.navigationBar.tintColor];
     [super viewDidLoad];
     if ( self.dataManager == nil ) {
@@ -63,16 +71,26 @@
 }
 
 -(void) documentDidLoad {
-    
-    [self performSelectorOnMainThread:@selector(nextQuestion:) withObject:self waitUntilDone:YES];
+    self.documentReady = YES;
     [self.manageQuestionsButton setEnabled:true];
-    
+    [self reloadCursor];
+
 }
+
+-(void) viewDidAppear:(BOOL)animated {
+    [self reloadCursor];
+    self.navigationController.toolbarHidden = YES;
+}
+
+-(void) viewDidDisappear:(BOOL)animated {
+    self.cursor = nil;
+}
+
+
 
 - (void)viewDidUnload
 {
-    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
-    [center removeObserver:self];
+    self.documentReady = NO;
     [self setQuestionTextView:nil];
     [self setAnswerTextView:nil];
     [self setQuestionMarkLabel:nil];
@@ -99,11 +117,18 @@
 }
 
 - (IBAction)nextQuestion:(id)sender {
-    self.questionTextView.text = @"hello";
-    self.answerTextView.text = @"world";
+    if ( self.cursor != nil ) {
+        Question *question = self.cursor.currentItem;
+        self.questionTextView.text = question.value;
+        self.answerTextView.text = question.answer;
+        [self.cursor goToNext];
+    } else {
+        [self restoreDefaultTextViewValues];
+    }
     
     self.questionMarkLabel.alpha = 1;
     self.answerTextView.alpha = 0;
+
     
 }
 
@@ -123,10 +148,38 @@
     [super touchesBegan:touches withEvent:event];
 }
 
+-(void) reloadCursor {
+    NSError *error = nil;
+    NSArray *questions = [self.questionDAO findAllInManagedObjectContext:self.dataManager.managedObjectContext error:&error ];
+    if ( error == nil ) {
+        if ( [questions count] > 0 ) {
+            self.cursor = [[CircularItemCursor alloc] initWithArray:questions];
+        } else {
+            self.cursor = nil;
+        }
+        [self performSelectorOnMainThread:@selector(nextQuestion:) withObject:self waitUntilDone:YES];
+
+    } else {
+        AlertHelper *helper = [[AlertHelper alloc] init];
+        [helper showAlertDialogWithMessage:NSLocalizedString(@"Error: Could not fetch questions from database", nil)];
+        NSLog(@"Error: could not fetch questions from database. Reason: %@", [error localizedDescription]);
+    }
+
+}
+
 -(void) addSwipeLeftRecognizer {
     UISwipeGestureRecognizer *swipeLeftRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(nextQuestion:)];
     swipeLeftRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
     [self.view addGestureRecognizer:swipeLeftRecognizer];
+}
+
+-(void) restoreDefaultTextViewValues {
+    NSString *defaultAnswerText = @"You can click in the Edit Button to see the list of questions you have in database and to add new Questions. When you come back here, the questions you registered will be presented to you in a random order.";
+    NSString *defaultQuestionText = @"How do I use Kotoba?";
+    
+    self.questionTextView.text = defaultQuestionText;
+    self.answerTextView.text = defaultAnswerText;
+
 }
 
 

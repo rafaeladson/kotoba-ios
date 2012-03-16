@@ -65,6 +65,29 @@
     GHAssertEqualStrings(@"blueberry", forthQuestion.value, nil);
 }
 
+-(void) testFindAllWhenThereIsOneEntityOnDatabase {
+    [self.dao createNewQuestionWithValue:@"foo" andAnswer:@"bar" inManagedObjectContext:self.dataManager.managedObjectContext];
+    
+    NSError *error = nil;
+    NSArray *questions = [self.dao findAllInManagedObjectContext:self.dataManager.managedObjectContext error:&error];
+    GHAssertNil(error, nil);
+    int numberOfQuestions = [questions count];
+    GHAssertEquals(1, numberOfQuestions, nil);
+    
+    Question *question = [questions objectAtIndex:0];
+    GHAssertEqualStrings(@"foo", question.value, nil);
+}
+
+-(void) testFindAllWhenThereIsNoEntityOnDatabase {
+    NSError *error = nil;
+    NSArray *questions = [self.dao findAllInManagedObjectContext:self.dataManager.managedObjectContext error:&error];
+    GHAssertNil(error, nil);
+
+    int numberOfQuestions = [questions count];
+    GHAssertEquals(0, numberOfQuestions, nil);
+    
+}
+
 -(void) tearDown {
     [self deleteInstancesWithEntityName:@"Question"];
 }

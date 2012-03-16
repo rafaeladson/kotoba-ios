@@ -10,6 +10,11 @@
 
 @implementation QuestionDAO
 
+-(NSArray *)findAllInManagedObjectContext:(NSManagedObjectContext *)context error:(NSError *__autoreleasing *)error {
+    NSFetchRequest *request = [self findAllFetchRequest];
+    NSArray *questions = [context executeFetchRequest:request error:error];
+    return questions;
+}
 
 -(NSFetchRequest *) findAllFetchRequest {
     NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Question"];

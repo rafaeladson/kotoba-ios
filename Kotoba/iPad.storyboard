@@ -144,7 +144,10 @@
                                 <rect key="frame" x="20" y="20" width="728" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="1YN-4E-KEa" id="D2z-Q0-MvM"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="HaC-xp-E4T" customClass="UIPlaceHolderTextView">
                                 <rect key="frame" x="20" y="59" width="728" height="881"/>

@@ -129,4 +129,10 @@
 -(void) mockAlertHelper:(AlertHelper *)alertHelper {
     self.alertHelper = alertHelper;
 }
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField {
+    [self.answerTextView becomeFirstResponder];
+    return NO;
+}
+
 @end

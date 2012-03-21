@@ -12,7 +12,7 @@
 @class AlertHelper;
 @class Question;
 
-@interface EditQuestionController : UIViewController
+@interface EditQuestionController : UIViewController <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *questionTextField;
 @property (weak, nonatomic) IBOutlet UIPlaceHolderTextView *answerTextView;

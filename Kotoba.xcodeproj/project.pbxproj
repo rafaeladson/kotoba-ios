@@ -663,6 +663,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
 				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",
@@ -683,6 +684,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Kotoba/Kotoba-Prefix.pch";
 				INFOPLIST_FILE = "Kotoba/Kotoba-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/lib\"",

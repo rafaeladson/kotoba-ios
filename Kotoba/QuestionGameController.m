@@ -74,7 +74,7 @@
     self.documentReady = YES;
     [self.manageQuestionsButton setEnabled:true];
     [self reloadCursor];
-
+    [self addSwipeLeftRecognizer];
 }
 
 -(void) viewDidAppear:(BOOL)animated {

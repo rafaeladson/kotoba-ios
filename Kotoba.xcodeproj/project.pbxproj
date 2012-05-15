@@ -20,6 +20,7 @@
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
 		537BC59114E330F90083E0E4 /* OldQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* OldQuestion.m */; };
+		53A4F0301562DF1F002AA824 /* ci.js in Sources */ = {isa = PBXBuildFile; fileRef = 53A4F02F1562DF1F002AA824 /* ci.js */; };
 		53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
 		53A59271142E799100C4CE55 /* QuestionGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53A59270142E799100C4CE55 /* QuestionGameController.m */; };
 		53A59273142E7B6A00C4CE55 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59272142E7B6A00C4CE55 /* iPad.storyboard */; };
@@ -82,6 +83,7 @@
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* OldQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldQuestion.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* OldQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldQuestion.m; sourceTree = "<group>"; };
+		53A4F02F1562DF1F002AA824 /* ci.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ci.js; sourceTree = "<group>"; };
 		53A59269142E787700C4CE55 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 		53A5926F142E799100C4CE55 /* QuestionGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionGameController.h; sourceTree = "<group>"; };
 		53A59270142E799100C4CE55 /* QuestionGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionGameController.m; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 		53D7E9CD15003ADA00D367EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		53D7E9CF15003ADA00D367EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		53D7E9DD15003C4600D367EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = UI.strings; sourceTree = "<group>"; };
+		53F301E01562B18F00CB511C /* QuestionLifecycle.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = QuestionLifecycle.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,6 +224,7 @@
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				53F301DE1562B16400CB511C /* applicationTests */,
 				53B12A7314E76716005762A0 /* Supporting Files */,
 				53388F4E151045F0001A94CF /* question */,
 			);
@@ -343,6 +347,15 @@
 				53D7E9CE15003ADA00D367EC /* Localizable.strings */,
 			);
 			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		53F301DE1562B16400CB511C /* applicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				53F301E01562B18F00CB511C /* QuestionLifecycle.js */,
+				53A4F02F1562DF1F002AA824 /* ci.js */,
+			);
+			name = applicationTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,6 +486,7 @@
 				53C29ECB1502FEBD007C9734 /* OldQuestion.m in Sources */,
 				53388F4D151044E4001A94CF /* QuestionDAO.m in Sources */,
 				53388F521510460D001A94CF /* QuestionDAOTest.m in Sources */,
+				53A4F0301562DF1F002AA824 /* ci.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

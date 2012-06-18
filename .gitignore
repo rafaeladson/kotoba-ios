@@ -2,3 +2,5 @@
 /build/
 *~
 Kotoba.xcodeproj/xcuserdata/rafael.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist
+*.trace
+\#*\#

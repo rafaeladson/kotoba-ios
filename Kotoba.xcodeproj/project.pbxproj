@@ -19,6 +19,8 @@
 		53543B8314F7158100326078 /* web_57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8214F7158100326078 /* web_57x57.png */; };
 		53543B8514F7159800326078 /* web_114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8414F7159800326078 /* web_114x114.png */; };
 		53543B8714F715C700326078 /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = 53543B8614F715C700326078 /* ic_launcher.png */; };
+		5363E282158F08F500CE23F8 /* questionScreens.js in Sources */ = {isa = PBXBuildFile; fileRef = 5363E281158F08F500CE23F8 /* questionScreens.js */; };
+		5363E284158F0C5700CE23F8 /* utils.js in Sources */ = {isa = PBXBuildFile; fileRef = 5363E283158F0C5700CE23F8 /* utils.js */; };
 		537BC59114E330F90083E0E4 /* OldQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 537BC59014E330F90083E0E4 /* OldQuestion.m */; };
 		53A4F0301562DF1F002AA824 /* ci.js in Sources */ = {isa = PBXBuildFile; fileRef = 53A4F02F1562DF1F002AA824 /* ci.js */; };
 		53A5926A142E787700C4CE55 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53A59269142E787700C4CE55 /* iPhone.storyboard */; };
@@ -81,6 +83,8 @@
 		53543B8214F7158100326078 /* web_57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_57x57.png; sourceTree = "<group>"; };
 		53543B8414F7159800326078 /* web_114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_114x114.png; sourceTree = "<group>"; };
 		53543B8614F715C700326078 /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
+		5363E281158F08F500CE23F8 /* questionScreens.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = questionScreens.js; sourceTree = "<group>"; };
+		5363E283158F0C5700CE23F8 /* utils.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = utils.js; sourceTree = "<group>"; };
 		537BC58F14E330F90083E0E4 /* OldQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OldQuestion.h; sourceTree = "<group>"; };
 		537BC59014E330F90083E0E4 /* OldQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OldQuestion.m; sourceTree = "<group>"; };
 		53A4F02F1562DF1F002AA824 /* ci.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ci.js; sourceTree = "<group>"; };
@@ -221,6 +225,15 @@
 			path = lib/InternIOSTest;
 			sourceTree = "<group>";
 		};
+		5363E27F158F08BB00CE23F8 /* question */ = {
+			isa = PBXGroup;
+			children = (
+				53F301E01562B18F00CB511C /* QuestionLifecycle.js */,
+				5363E281158F08F500CE23F8 /* questionScreens.js */,
+			);
+			name = question;
+			sourceTree = "<group>";
+		};
 		53B12A7214E76716005762A0 /* UnitTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,8 +365,9 @@
 		53F301DE1562B16400CB511C /* applicationTests */ = {
 			isa = PBXGroup;
 			children = (
-				53F301E01562B18F00CB511C /* QuestionLifecycle.js */,
+				5363E27F158F08BB00CE23F8 /* question */,
 				53A4F02F1562DF1F002AA824 /* ci.js */,
+				5363E283158F0C5700CE23F8 /* utils.js */,
 			);
 			name = applicationTests;
 			sourceTree = "<group>";
@@ -487,6 +501,8 @@
 				53388F4D151044E4001A94CF /* QuestionDAO.m in Sources */,
 				53388F521510460D001A94CF /* QuestionDAOTest.m in Sources */,
 				53A4F0301562DF1F002AA824 /* ci.js in Sources */,
+				5363E282158F08F500CE23F8 /* questionScreens.js in Sources */,
+				5363E284158F0C5700CE23F8 /* utils.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

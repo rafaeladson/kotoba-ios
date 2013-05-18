@@ -18,10 +18,10 @@ function addQuestionTest() {
     var randomNumber = Math.floor(Math.random() * 1000000 );
     var questionName = "Question no. " + randomNumber;
 
-    screen = QuestionEditScreen(appWindow, navigationBar);
+    screen = QuestionEditScreen(target, appWindow, navigationBar);
     screen.addNewQuestion(questionName, "This is an automated test question!");
     
-    UIALogger.logDebug("I'm here!!!");
+    UIALogger.logDebug("After adding question!!!");
     var numberOfQuestionsDelta =  appWindow.tableViews()[0].cells().length;
     if ( numberOfQuestionsDelta != 1 ) {
         UIALogger.logFail( "Create question: error in number of questions in  table" );
@@ -47,7 +47,7 @@ function editQuestion(questionName) {
 
     navigationBar.rightButton().tap();
     
-    var screen = QuestionEditScreen(appWindow, navigationBar);
+    var screen = QuestionEditScreen(target, appWindow, navigationBar);
     screen.editQuestion(questionName, questionName, "Update!");
     
     cell = appWindow.tableViews()[0].cells()[questionName];
@@ -66,7 +66,7 @@ function removeQuestionTest(questionName) {
     UIALogger.logStart("Delete question");
     navigationBar.rightButton().tap();
     
-    var screen = QuestionEditScreen(appWindow, navigationBar);
+    var screen = QuestionEditScreen(target, appWindow, navigationBar);
     screen.removeQuestion(questionName);
     
     navigationBar.leftButton().tap();

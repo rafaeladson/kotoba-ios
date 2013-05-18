@@ -61,6 +61,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		530B36371644675A005C7DB5 /* questionPerformanceTest.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = questionPerformanceTest.js; sourceTree = "<group>"; };
+		530B363816447469005C7DB5 /* removeAll.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = removeAll.js; sourceTree = "<group>"; };
 		532F7A5415004CC70013BD3A /* EditQuestionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditQuestionController.h; sourceTree = "<group>"; };
 		532F7A5515004CC70013BD3A /* EditQuestionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionController.m; sourceTree = "<group>"; };
 		53388F4A151044E4001A94CF /* QuestionDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionDAO.h; sourceTree = "<group>"; };
@@ -230,6 +232,8 @@
 			children = (
 				53F301E01562B18F00CB511C /* QuestionLifecycle.js */,
 				5363E281158F08F500CE23F8 /* questionScreens.js */,
+				530B36371644675A005C7DB5 /* questionPerformanceTest.js */,
+				530B363816447469005C7DB5 /* removeAll.js */,
 			);
 			name = question;
 			sourceTree = "<group>";
@@ -416,7 +420,7 @@
 		53CB8DEF142E774300518E28 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 53CB8DF2142E774300518E28 /* Build configuration list for PBXProject "Kotoba" */;
 			compatibilityVersion = "Xcode 3.2";

@@ -1,7 +1,7 @@
 /**
  * All methods in this class assumes you are on the tableView that shows the list of the questions.
  */
-function QuestionEditScreen(appWindow, navigationBar) {
+function QuestionEditScreen(target, appWindow, navigationBar) {
     
     var _screen = {
         addNewQuestion: function (value, answer) {
@@ -22,13 +22,29 @@ function QuestionEditScreen(appWindow, navigationBar) {
             cell.buttons()[0].tap();
             app.toolbar().buttons()["Done"].tap();
         },
+        
+        removeAllQuestions:function() {
+            app.toolbar().buttons()["Edit"].tap();
+            var cells = appWindow.tableViews()[0].cells()
+            while( cells.length > 0 ) {
+                cell = cells[0];
+                cell.switches()[0].tap();
+                cell.buttons()[0].tap();
+                cells = appWindow.tableViews()[0].cells()                
+            }
+            app.toolbar().buttons()["Done"].tap();
+            
+        },
     
         _addOrEditQuestion: function(value, answer) {
             cleanAndTypeTextInElement(value, appWindow.textFields()[0]);
             cleanAndTypeTextInElement(answer, appWindow.textViews()[0]);
             navigationBar.rightButton().tap();
+            target.delay(1);
+            
 
         },
+        
     };
     
     return _screen;
